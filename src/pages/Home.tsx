@@ -3,7 +3,7 @@ import Statement from '../components/Statement';
 import Works from '../components/Works';
 import Approach from '../components/Approach';
 import Features from '../components/Features';
-import Stats from '../components/Stats';
+// import Stats from '../components/Stats';
 import Expertise from '../components/Expertise';
 import Team from '../components/Team';
 import Testimonials from '../components/Testimonials';
