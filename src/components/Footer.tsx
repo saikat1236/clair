@@ -66,14 +66,14 @@ const Footer = () => (
       {/* Bottom Row: Contact Info */}
       <div className="flex flex-col lg:flex-row justify-between items-end gap-12 border-t border-white/10 pt-16">
         <div className="flex flex-col gap-2 text-[14px] font-medium text-white/40">
-           <p>© {new Date().getFullYear()} Clair°. All rights reserved.</p>
-           <p>Designed by Clair, Built with React</p>
+           <p>© {new Date().getFullYear()} Saikat. All rights reserved.</p>
+           <p>Designed by Saikat Biswas, Built with React</p>
         </div>
 
         <div className="flex flex-col items-end gap-2 text-right">
            <span className="text-[14px] font-bold uppercase tracking-widest text-white/40 mb-2">Let's Connect</span>
-           <a href="tel:(510) 895-6500" className="text-[24px] md:text-[32px] font-semibold tracking-tight hover:text-[var(--color-clair-mint)] transition-colors opacity-90">(510) 895-6500</a>
-           <a href="mailto:hello@clair.com" className="text-[40px] md:text-[80px] font-bold tracking-tighter leading-none hover:text-[var(--color-clair-mint)] transition-colors mt-4">hello@clair.com</a>
+           <a href="tel:(510) 895-6500" className="text-[10px] md:text-[15px] font-semibold tracking-tight hover:text-[var(--color-clair-mint)] transition-colors opacity-90">(91) 7085959167</a>
+           {/* <a href="mailto:hello@clair.com" className="text-[40px] md:text-[80px] font-bold tracking-tighter leading-none hover:text-[var(--color-clair-mint)] transition-colors mt-4">hello@clair.com</a> */}
         </div>
       </div>
 
