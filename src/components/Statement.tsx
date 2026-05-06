@@ -83,7 +83,7 @@ const Statement = () => {
         <motion.div 
           animate={{ x: offsetX }}
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-          className="flex gap-12 items-center h-full px-[5%] transform-style-3d cursor-grab active:cursor-grabbing"
+          className="flex gap-12 items-center h-full transform-style-3d cursor-grab active:cursor-grabbing"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
