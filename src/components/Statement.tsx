@@ -1,4 +1,4 @@
-import { motion, animate, useMotionValue } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useRef, useEffect, useState } from 'react';
 
 const slideshowImages = [
@@ -11,36 +11,41 @@ const slideshowImages = [
 
 const Statement = () => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const x = useMotionValue(0);
+  const [activeIndex, setActiveIndex] = useState(2); // Start with middle
   const [isPaused, setIsPaused] = useState(false);
 
   useEffect(() => {
     if (isPaused) return;
 
-    const controls = animate(x, [x.get(), -2000], {
-      duration: 30,
-      ease: "linear",
-      repeat: Infinity,
-      repeatType: "loop",
-      onUpdate: (latest) => {
-        if (latest <= -1000) x.set(0);
-      }
-    });
+    const interval = setInterval(() => {
+      setActiveIndex((prev) => {
+        const next = prev + 1;
+        // Seamless loop: if we go beyond the second set, jump back to middle set
+        if (next >= slideshowImages.length * 2) return slideshowImages.length;
+        return next;
+      });
+    }, 2000); 
 
-    return () => controls.stop();
-  }, [isPaused, x]);
+    return () => clearInterval(interval);
+  }, [isPaused]);
 
   const handleNext = () => {
     setIsPaused(true);
-    animate(x, x.get() - 480, { duration: 0.8, ease: [0.16, 1, 0.3, 1] });
-    setTimeout(() => setIsPaused(false), 3000);
+    setActiveIndex((prev) => (prev + 1) % (slideshowImages.length * 3));
+    setTimeout(() => setIsPaused(false), 5000);
   };
 
   const handlePrev = () => {
     setIsPaused(true);
-    animate(x, x.get() + 480, { duration: 0.8, ease: [0.16, 1, 0.3, 1] });
-    setTimeout(() => setIsPaused(false), 3000);
+    setActiveIndex((prev) => (prev - 1 + slideshowImages.length * 3) % (slideshowImages.length * 3));
+    setTimeout(() => setIsPaused(false), 5000);
   };
+
+  // Calculate x position: (width + gap) * index, adjusted to center the active one
+  // Item width is 450px (md), gap is 48px (12 * 4). Center offset is roughly half screen.
+  const itemWidth = 450;
+  const gap = 48;
+  const offsetX = -(activeIndex * (itemWidth + gap)) + (typeof window !== 'undefined' ? window.innerWidth / 2 - itemWidth / 2 : 0);
 
   return (
     <section className="relative z-10 py-32 bg-[var(--color-clair-light)] text-[var(--color-clair-dark)] overflow-hidden" ref={containerRef}>
@@ -76,25 +81,23 @@ const Statement = () => {
         </div>
 
         <motion.div 
-          style={{ x }}
+          animate={{ x: offsetX }}
+          transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
           className="flex gap-12 items-center h-full px-[5%] transform-style-3d cursor-grab active:cursor-grabbing"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
-          drag="x"
-          onDragStart={() => setIsPaused(true)}
         >
-          {[...slideshowImages, ...slideshowImages, ...slideshowImages, ...slideshowImages].map((src, i) => {
+          {[...slideshowImages, ...slideshowImages, ...slideshowImages].map((src, i) => {
+            const isActive = i === activeIndex;
             return (
               <motion.div
                 key={i}
-                initial={{ scale: 0.7, rotateY: -25, opacity: 0.4 }}
-                whileInView={{ 
-                  scale: 1, 
-                  rotateY: 0, 
-                  opacity: 1,
-                  transition: { duration: 0.6, ease: "easeOut" }
+                animate={{ 
+                  scale: isActive ? 1 : 0.7, 
+                  rotateY: isActive ? 0 : (i < activeIndex ? 25 : -25), 
+                  opacity: isActive ? 1 : 0.4 
                 }}
-                viewport={{ once: false, amount: 0.6, margin: "0px -10% 0px -10%" }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
                 className="flex-shrink-0 w-[300px] md:w-[450px] h-[400px] md:h-[550px] rounded-[24px] overflow-hidden shadow-[0_40px_80px_rgba(0,0,0,0.15)] relative border border-white/10"
               >
                 <img src={src} alt="" className="w-full h-full object-cover" />
