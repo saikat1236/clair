@@ -22,9 +22,9 @@ const Hero = () => {
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           className="text-[58px] md:text-[80px] lg:text-[100px] font-semibold tracking-[-0.04em] leading-[1] mb-8 max-w-5xl"
         >
-          Premium Digital<br />
-          Solutions for<br />
-          Visionary Brands
+          Grow Sustainable<br/>
+          Brands—Smarter & <br/>
+          Greener Future
         </motion.h1>
         
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-12 mt-24">
@@ -34,7 +34,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-[18px] md:text-[20px] text-[#E4E5E7] max-w-lg leading-relaxed font-medium"
           >
-            Design isn’t just what we do—it’s how we tell stories, create emotions, and connect people. Let’s build something magical.
+Today, just growth isn’t enough — responsible growth is what sets modern brands apart. We create thoughtfully crafted digital marketing strategies for eco-friendly, ethical, and sustainable brands that help your business to grow keeping the planet first. With the perfect blend of content, creativity, and sustainable principles, scale smarter. 
           </motion.p>
           
           <div className="flex flex-col gap-4 text-[18px] md:text-[20px] text-[#E4E5E7] font-medium items-end">

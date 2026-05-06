@@ -4,20 +4,20 @@ const Approach = () => {
   const steps = [
     { 
       num: '01', 
-      title: 'Strategy & Planning', 
-      desc: 'We understand your vision, then research and plan the project structure.', 
+      title: 'Connect & Evaluate', 
+      desc: 'We begin by deeply understanding your brand\'s purpose, sustainability goals, and audience values.', 
       img: 'https://framerusercontent.com/images/1jbCM87UVieS7gftxctHtx8k.png'
     },
     { 
       num: '02', 
-      title: 'Design & Prototyping', 
-      desc: 'Our creative team transforms insights into engaging designs and prototypes.', 
+      title: 'Strategy & Implementation', 
+      desc: 'We design a tailored, sustainability-first marketing strategy that balances ethics with performance.', 
       img: 'https://framerusercontent.com/images/1OR7QrERS5zQzjNcA8v9g98Vae0.png'
     },
     { 
       num: '03', 
-      title: 'Implementation & Delivery', 
-      desc: 'We execute with precision, ensuring a seamless launch and measurable results.', 
+      title: 'Execution & Scaling', 
+      desc: 'We execute campaigns with continuous monitoring and optimization to ensure measurable results.', 
       img: 'https://framerusercontent.com/images/cEdBalzsa8LrbdSOxHocTeRJOrw.png'
     },
   ];
@@ -35,9 +35,9 @@ const Approach = () => {
                 <div className="w-2.5 h-2.5 bg-[var(--color-clair-mint)] rounded-full"></div>
                 <div className="w-2.5 h-2.5 bg-[var(--color-clair-mint)] rounded-full opacity-40"></div>
              </div>
-             <span className="text-[14px] font-medium text-white/60 uppercase tracking-widest ml-1">Our Approach</span>
+             <span className="text-[14px] font-medium text-white/60 uppercase tracking-widest ml-1">Working Process</span>
           </div>
-          <h2 className="text-[20px] font-medium text-white/60 tracking-tight">3-Step Process</h2>
+          <h2 className="text-[20px] font-medium text-white/60 tracking-tight">We Research, We Strategize, We Drive Results</h2>
         </div>
 
         {/* Horizontal Row with Staggered Scroll Reveal */}

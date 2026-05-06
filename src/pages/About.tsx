@@ -20,15 +20,20 @@ const About = () => {
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           className="mb-24 text-center max-w-4xl mx-auto"
         >
-          <h1 className="text-[58px] md:text-[80px] font-semibold tracking-[-0.04em] mb-8 leading-[1]">Designing Digital Futures</h1>
-          <motion.p 
+          <h1 className="text-[58px] md:text-[80px] font-semibold tracking-[-0.04em] mb-8 leading-[1]">Shaping the future of New Earth</h1>
+          <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-[18px] text-[#E4E5E7] leading-relaxed"
+            className="text-[18px] text-[#E4E5E7] leading-relaxed space-y-6"
           >
-            Building impactful websites that shape tomorrow’s digital brand experiences.
-          </motion.p>
+            <p>
+              We are a purpose-driven <span className="font-bold text-white">sustainable marketing agency</span> committed to creating a better, more responsible world through conscious branding and ethical growth. We believe that businesses have the power to shape the future of a New Earth—one where profit, people, and the planet grow together.
+            </p>
+            <p>
+              By blending <span className="font-bold text-white">creativity, strategy, and sustainability</span>, we help brands communicate their true impact with honesty and clarity. Our work focuses on building long-term value, fostering trust, and inspiring positive change, ensuring that every campaign contributes to a greener, more mindful future for generations to come.
+            </p>
+          </motion.div>
         </motion.div>
 
         <Stats />
