@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { useRef, useEffect, useState } from 'react';
+import { useRef } from 'react';
 
 const slideshowImages = [
   'https://framerusercontent.com/images/p2APj4NLz2Qb7fEBqRZIewc.jpg',
