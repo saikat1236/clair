@@ -81,22 +81,7 @@ const Team = () => {
           ))}
         </div>
 
-        {/* More Members indicator */}
-        <motion.div 
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="flex justify-center items-center gap-10"
-        >
-           <div className="flex -space-x-4">
-              {[1,2,3,4,5].map(i => (
-                <div key={i} className="w-12 h-12 rounded-full border-4 border-[var(--color-clair-dark)] bg-[rgba(255,255,255,0.05)] overflow-hidden">
-                   <div className="w-full h-full bg-white/10"></div>
-                </div>
-              ))}
-           </div>
-           <span className="text-[20px] font-bold tracking-tight opacity-60">+ 27 more</span>
-        </motion.div>
+
 
       </div>
     </section>

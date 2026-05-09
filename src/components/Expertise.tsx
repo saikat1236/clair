@@ -4,10 +4,10 @@ const Expertise = () => {
   const services = [
     {
       num: '01',
-      title: 'Search Engine Optimization',
-      desc: 'We optimize your digital presence with high-intent sustainability keywords, helping conscious consumers find and trust your brand—driving high-quality organic growth.',
-      tags: ['SEO', 'Growth', 'Keywords'],
-      img: 'https://framerusercontent.com/images/eanrefUQRjJOGvG9rqaM6Drbo4.png'
+      title: 'Website Development',
+      desc: 'We build custom websites that clearly showcase your sustainable value through transparent tools and intuitive user journeys and long-term value instantly clear to users.',
+      tags: ['Web', 'Design', 'UI/UX'],
+      img: 'https://framerusercontent.com/images/NV6QbP3oUFxQUAj0mrypAcUz9s.png'
     },
     {
       num: '02',
@@ -18,25 +18,28 @@ const Expertise = () => {
     },
     {
       num: '03',
+      title: 'Social Media Management',
+      desc: 'We manage your social channels daily, build trust, and grow a loyal community—turning complex sustainability into clear, engaging content your audience believes.',
+      tags: ['Social', 'Community', 'Growth'],
+      img: 'https://framerusercontent.com/images/eanrefUQRjJOGvG9rqaM6Drbo4.png'
+    },
+    {
+      num: '04',
+      title: 'Search Engine Optimization',
+      desc: 'We optimize your digital presence with high-intent sustainability keywords, helping conscious consumers find and trust your brand—driving high-quality organic growth.',
+      tags: ['SEO', 'Growth', 'Keywords'],
+      img: 'https://framerusercontent.com/images/eanrefUQRjJOGvG9rqaM6Drbo4.png'
+    },
+
+    {
+      num: '05',
       title: 'Performance Marketing',
       desc: 'We deliver ethical digital ads with measurable ROI, targeting sustainability-minded consumers while respecting your mission and without wasting your budget.',
       tags: ['Ads', 'ROI', 'Performance'],
       img: 'https://framerusercontent.com/images/WUM7m0CWh8OIbwVSHQHOQKDlMQ0.png'
     },
-    {
-      num: '04',
-      title: 'Website Development',
-      desc: 'We build custom websites that clearly showcase your sustainable value through transparent tools and intuitive user journeys and long-term value instantly clear to users.',
-      tags: ['Web', 'Design', 'UI/UX'],
-      img: 'https://framerusercontent.com/images/NV6QbP3oUFxQUAj0mrypAcUz9s.png'
-    },
-    {
-      num: '05',
-      title: 'Social Media Management',
-      desc: 'We manage your social channels daily, build trust, and grow a loyal community—turning complex sustainability into clear, engaging content your audience believes.',
-      tags: ['Social', 'Community', 'Growth'],
-      img: 'https://framerusercontent.com/images/eanrefUQRjJOGvG9rqaM6Drbo4.png'
-    }
+
+
   ];
 
   return (

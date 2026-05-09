@@ -4,7 +4,9 @@ const Nav = () => (
   <nav className="fixed top-0 left-0 right-0 p-6 flex justify-between items-center z-50 text-white pointer-events-none">
     <div className="pointer-events-auto">
       <Link to="/" className="font-bold text-[22px] tracking-tight hover:opacity-80 transition-opacity flex items-center gap-2">
-        <img src="https://framerusercontent.com/images/nl2zWHDkDWaUKSAqJrHKBGA3Oc.svg" alt="Clair Logo" className="w-[83px] h-[26px]" />
+        {/* <img src="https://framerusercontent.com/images/nl2zWHDkDWaUKSAqJrHKBGA3Oc.svg" alt="Clair Logo" className="w-[83px] h-[26px]" /> */}
+        
+        <span className="text-3xl">Neuérde</span>
       </Link>
     </div>
     

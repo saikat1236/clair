@@ -15,7 +15,7 @@ const Hero = () => {
          />
       </div>
 
-      <motion.div style={{ y, opacity }} className="max-w-7xl mx-auto w-full z-10 px-6 pt-32 pb-16 relative">
+      <motion.div style={{ y, opacity }} className="max-w-7xl mx-auto w-full z-10 px-6 pb-16 relative">
         <motion.h1 
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -25,14 +25,15 @@ const Hero = () => {
           Let's Craft Your Sustainable Brand Together!
         </motion.h1>
         
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-12 mt-24">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-12 mt-10">
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-[18px] md:text-[20px] text-[#E4E5E7] max-w-lg leading-relaxed font-medium"
           >
-Today, just growth isn’t enough — responsible growth is what sets modern brands apart. We create thoughtfully crafted digital marketing strategies for eco-friendly, ethical, and sustainable brands that help your business to grow keeping the planet first. With the perfect blend of content, creativity, and sustainable principles, scale smarter. 
+Today, growth alone isn’t enough — responsible growth is what matters.
+We are a sustainable digital marketing agency crafting impactful, ethical strategies that help eco-conscious brands scale smarter while putting the planet first.
           </motion.p>
           
           <div className="flex flex-col gap-4 text-[18px] md:text-[20px] text-[#E4E5E7] font-medium items-end">

@@ -2,12 +2,34 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const faqs = [
-  { q: 'How does the process work?', a: 'We follow a structured process to ensure clarity and efficiency. From strategy and design to development and launch, every step is carefully planned to meet your goals.' },
-  { q: 'How long does a project take?', a: 'Timelines vary based on the project’s complexity. A standard website takes 4–6 weeks, while more advanced projects may take longer. We provide clear timelines upfront.' },
-  { q: 'Can I request custom features?', a: 'Absolutely! Whether it’s a unique design, custom functionality, or integrations, we tailor our solutions to fit your specific needs.' },
-  { q: 'Do you offer ongoing support?', a: 'Yes! We provide maintenance, updates, and support to ensure your digital platform stays optimized and secure.' },
-  { q: 'How does pricing work?', a: 'Our pricing is transparent and based on the scope of work. We offer fixed plans as well as custom solutions to match your budget and requirements.' },
-  { q: 'How do I get started?', a: 'Simply reach out to us! We’ll discuss your needs, outline a plan, and get started on building your digital success.' },
+  { 
+    q: 'Why does Neuerde only work with eco-friendly and sustainable businesses?', 
+    a: 'Our mission is to accelerate the shift to a sustainable economy. We believe the biggest barrier for conscious consumers is clarity and trust. By focusing on verifiable eco-friendly brands, we align our skills with our values, ensuring our execution always promotes a positive impact.' 
+  },
+  { 
+    q: 'How can you guarantee that showcasing my eco-benefits will lead to immediate sales?', 
+    a: "We don't guarantee sales, but we guarantee performance improvements. Our strategies are rooted in Impact-to-Conversion Testing. We prove that by simplifying your complex claims (e.g., carbon footprint reduction) into easily digestible narratives, consumer confidence and purchase intent increase dramatically." 
+  },
+  { 
+    q: 'What is the "Sustainable Value Audit" you mention?', 
+    a: 'It is the foundational first step. We conduct a thorough review, including a SWOT Analysis, to understand your unique environmental strengths and communication challenges. The result is a written, actionable plan detailing the exact content and campaigns needed to make your audience instantly buy based on your integrity.' 
+  },
+  { 
+    q: 'Are you a full-service marketing agency?', 
+    a: 'We are a specialized full-service agency. We handle everything from strategy and web development to performance marketing and SMM, but our entire focus is on leveraging sustainability as the core engine for digital growth and profitability.' 
+  },
+  { 
+    q: 'What is your typical pricing structure?', 
+    a: 'Our projects are Primarily structured as 1) Fixed-Fee Strategy & Audit (due to the intensive research required); followed by 2) Retainer-Based Execution & Testing. This ensures transparency and a predictable cost for the initial blueprint.' 
+  },
+  { 
+    q: 'Do you offer services a la carte (e.g., just the SWOT analysis)?', 
+    a: 'Yes, the Sustainable Value Audit (including the SWOT and Written Plan of Action) can be a standalone engagement. However, the highest ROI is achieved when we execute the plan we develop, as we specialize in the unique communication needs of eco-friendly brands.' 
+  },
+  { 
+    q: 'How does your pricing compare to a standard agency?', 
+    a: 'Our rates reflect our specialization and deep expertise in translating complex environmental data into high-converting digital assets. We aim for long-term partnership, viewing our services as an investment in sustainable growth that pays for itself by dramatically increasing your average customer value (ACV) and brand trust.' 
+  },
 ];
 
 const FAQ = () => {
