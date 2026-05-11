@@ -11,8 +11,8 @@ const Footer = () => (
         {/* Left: Giant Logo */}
         <div className="flex flex-col gap-12">
           <div className="flex items-start gap-4">
-            <h1 className="text-9xl md:text-9xl font-semibold tracking-tighter leading-[0.8]">Neuérde</h1>
-            <div className="w-8 h-8 md:w-14 md:h-14 rounded-full border-[8px] md:border-[16px] border-[var(--color-clair-mint)] mt-4 md:mt-8"></div>
+            <h1 className="text-7xl md:text-9xl font-semibold tracking-tighter leading-[0.8]">Neuérde</h1>
+            <div className="w-5 h-5 md:w-14 md:h-14 rounded-full border-[8px] md:border-[16px] border-green-500 mb-4 md:mb-8"></div>
           </div>
 
           <div className="flex flex-col gap-8 max-w-sm">
@@ -38,6 +38,7 @@ const Footer = () => (
           <div className="flex flex-col gap-5 text-[18px] font-medium">
             <Link to="/about" className="text-[#AEB0B6] hover:text-white transition-colors">About</Link>
             <Link to="/works" className="text-[#AEB0B6] hover:text-white transition-colors">Works</Link>
+            <Link to="/blog" className="text-[#AEB0B6] hover:text-white transition-colors">Blog</Link>
             <Link to="/contact" className="text-[#AEB0B6] hover:text-white transition-colors">Contact</Link>
             <Link to="/legal/privacy" className="text-[#AEB0B6] hover:text-white transition-colors">Privacy Policy</Link>
             <Link to="/legal/terms" className="text-[#AEB0B6] hover:text-white transition-colors">Term of Service</Link>
