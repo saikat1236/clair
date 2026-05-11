@@ -6,19 +6,19 @@ const Approach = () => {
       num: '01', 
       title: 'Connect & Evaluate', 
       desc: 'We begin by deeply understanding your brand\'s purpose, sustainability goals, and audience values.', 
-      img: 'https://framerusercontent.com/images/1jbCM87UVieS7gftxctHtx8k.png'
-    },
+      img: 'src/assets/step1.png'
+    },  
     { 
       num: '02', 
       title: 'Strategy & Implementation', 
       desc: 'We design a tailored, sustainability-first marketing strategy that balances ethics with performance.', 
-      img: 'https://framerusercontent.com/images/1OR7QrERS5zQzjNcA8v9g98Vae0.png'
+      img: 'src/assets/step2.png'
     },
     { 
       num: '03', 
       title: 'Execution & Scaling', 
       desc: 'We execute campaigns with continuous monitoring and optimization to ensure measurable results.', 
-      img: 'https://framerusercontent.com/images/cEdBalzsa8LrbdSOxHocTeRJOrw.png'
+      img: 'src/assets/step3.png'
     },
   ];
 

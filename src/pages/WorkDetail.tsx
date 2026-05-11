@@ -82,10 +82,10 @@ const WorkDetail = () => {
         >
           <div className="flex gap-3 mb-6">
             {project.tags.map(t => (
-              <span key={t} className="text-[12px] font-medium px-4 py-1.5 bg-[var(--token-080e9d1c-81ab-4b26-8824-851756828a5b,rgba(0,244,201,0.15))] text-[var(--color-clair-mint)] border border-white/5 rounded-full">{t}</span>
+              <span key={t} className="text-[12px] font-medium px-4 py-1.5 bg-[rgba(0,244,201,0.15)] text-[var(--color-clair-mint)] border border-white/5 rounded-full">{t}</span>
             ))}
           </div>
-          <h1 className="text-[58px] md:text-[80px] font-semibold tracking-tight mb-8 max-w-4xl leading-[1]">{project.title}</h1>
+          <h1 className="text-[42px] md:text-[80px] font-semibold tracking-tight mb-8 max-w-4xl leading-[1]">{project.title}</h1>
           <p className="text-[18px] text-[#E4E5E7] max-w-2xl leading-relaxed font-medium">{project.desc}</p>
         </motion.div>
 
@@ -95,7 +95,7 @@ const WorkDetail = () => {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="w-full aspect-[21/9] rounded-2xl overflow-hidden bg-[#131315] border border-white/5 p-1.5 backdrop-blur-[2.5px]"
+              className="w-full aspect-square sm:aspect-video md:aspect-[21/9] rounded-2xl overflow-hidden bg-[#131315] border border-white/5 p-1.5 backdrop-blur-[2.5px]"
             >
               <img src={project.img} alt={project.title} className="w-full h-full object-cover rounded-[6px]" />
             </motion.div>

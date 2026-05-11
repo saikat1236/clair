@@ -11,7 +11,7 @@ const Footer = () => (
         {/* Left: Giant Logo */}
         <div className="flex flex-col gap-12">
           <div className="flex items-start gap-4">
-            <h1 className="text-7xl md:text-9xl font-semibold tracking-tighter leading-[0.8]">Neuérde</h1>
+            <h1 className="text-6xl md:text-9xl font-semibold tracking-tighter leading-[0.8]">Neuérde</h1>
             <div className="w-5 h-5 md:w-14 md:h-14 rounded-full border-[8px] md:border-[16px] border-green-500 mb-4 md:mb-8"></div>
           </div>
 

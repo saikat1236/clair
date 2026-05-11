@@ -52,10 +52,10 @@ const Blog = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-7xl md:text-[160px] font-semibold tracking-tighter leading-[0.8] mb-12">
+            <h1 className="text-6xl sm:text-7xl md:text-[160px] font-semibold tracking-tighter leading-[0.8] mb-8 md:mb-12">
               Our Blog<span className="text-[var(--color-clair-mint)]">.</span>
             </h1>
-            <p className="text-xl md:text-2xl text-[#AEB0B6] max-w-2xl font-medium leading-relaxed">
+            <p className="text-lg md:text-2xl text-[#AEB0B6] max-w-2xl font-medium leading-relaxed">
               Insights, trends, and strategies at the intersection of design, sustainability, and technology.
             </p>
           </motion.div>

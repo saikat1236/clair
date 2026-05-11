@@ -20,7 +20,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="text-[58px] pt-40 md:text-[70px] lg:text-[90px] font-semibold tracking-[-0.04em] leading-[1] mb-8 max-w-5xl"
+          className="text-[42px] pt-32 md:pt-40 md:text-[70px] lg:text-[90px] font-semibold tracking-[-0.04em] leading-[1] mb-8 max-w-5xl"
         >
           Let's Craft Your Sustainable Brand Together!
         </motion.h1>

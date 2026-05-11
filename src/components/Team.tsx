@@ -48,13 +48,13 @@ const Team = () => {
     <section className="py-48 px-6 bg-[var(--color-clair-dark)] text-white relative z-10" id="team">
       <div className="max-w-[1200px] mx-auto">
         
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-16 md:gap-24 mb-32 items-end">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-24 mb-20 md:mb-32 items-end">
           <div className="md:col-span-6 flex flex-col gap-6">
             <motion.h2 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-[48px] md:text-[80px] font-semibold mb-2 tracking-[-0.04em] leading-[1]"
+              className="text-[42px] md:text-[80px] font-semibold mb-2 tracking-[-0.04em] leading-[1]"
             >
               Meet the Clair Team
             </motion.h2>

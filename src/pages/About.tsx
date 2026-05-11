@@ -1,8 +1,5 @@
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';
-import Stats from '../components/Stats';
-import FAQ from '../components/FAQ';
-import ContactForm from '../components/ContactForm';
 import Footer from '../components/Footer';
 
 const About = () => {
@@ -10,80 +7,210 @@ const About = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  const howWeWork = [
+    { letter: 'N', title: 'New Discovery Call', desc: 'Unearthing Your Unique Story' },
+    { letter: 'E', title: 'Efficient Free Audit', desc: 'Evaluating Impact & Opportunity' },
+    { letter: 'U', title: 'User-Centric Approach', desc: 'Understanding the Conscious Consumer' },
+    { letter: 'E', title: 'Emphasize to Scale', desc: 'Expanding Your Positive Footprint' },
+    { letter: 'R', title: 'Rationalize to Implement', desc: 'Gearing Up For Action' },
+    { letter: 'D', title: 'Delivering on Time', desc: 'Consistent Execution & Reporting' },
+    { letter: 'E', title: 'Effective Proposal', desc: 'Designing the Sustainable Strategy' },
+  ];
+
   return (
-    <main className="pt-40 min-h-screen flex flex-col bg-[var(--color-clair-dark)] text-white relative z-10">
-      <div className="flex-1 max-w-7xl mx-auto w-full px-6">
-        
-        <motion.div 
+    <main className="bg-[var(--color-clair-dark)] min-h-screen text-white">
+      {/* Hero Section */}
+      <section className="bg-[var(--color-clair-dark)] pt-64 pb-48 text-center relative overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://framerusercontent.com/images/ysyogWDfsxbU0BnMOcWAkReXFLw.png?width=2160&height=1371" 
+            alt="" 
+            className="w-full h-full object-cover opacity-20"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[var(--color-clair-dark)]" />
+        </div>
+
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="mb-24 text-center max-w-4xl mx-auto"
+          transition={{ duration: 0.8 }}
+          className="relative z-10 px-6"
         >
-          <h1 className="text-[58px] md:text-[80px] font-semibold tracking-[-0.04em] mb-8 leading-[1]">Shaping the future of New Earth</h1>
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-[18px] text-[#E4E5E7] leading-relaxed space-y-6"
-          >
-            <p>
-              We are a purpose-driven <span className="font-bold text-white">sustainable marketing agency</span> committed to creating a better, more responsible world through conscious branding and ethical growth. We believe that businesses have the power to shape the future of a New Earth—one where profit, people, and the planet grow together.
-            </p>
-            <p>
-              By blending <span className="font-bold text-white">creativity, strategy, and sustainability</span>, we help brands communicate their true impact with honesty and clarity. Our work focuses on building long-term value, fostering trust, and inspiring positive change, ensuring that every campaign contributes to a greener, more mindful future for generations to come.
-            </p>
-          </motion.div>
+          <h1 className="text-[72px] sm:text-[100px] md:text-[240px] font-semibold text-white leading-[0.8] tracking-tighter">
+            About<span className="text-[var(--color-clair-mint)]">.</span>
+          </h1>
+          <p className="mt-8 md:mt-12 text-lg md:text-2xl text-[#AEB0B6] max-w-2xl mx-auto font-medium leading-relaxed">
+            Building a world where sustainability and digital innovation drive the next generation of growth.
+          </p>
         </motion.div>
+      </section>
 
-        <Stats />
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mb-32 py-24 border-t border-white/10">
+      {/* Brand Story Section */}
+      <section className="max-w-[1200px] mx-auto px-6 py-32">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-[32px] md:text-[40px] font-medium mb-6 leading-tight">Elevating Brands with Clair’s Creative Expertise</h2>
-            <p className="text-[18px] text-[#E4E5E7] leading-relaxed">
-              At Clair, we craft digital experiences that inspire, engage, and drive success. With a passion for design and innovation, we transform ideas into impactful solutions that help brands grow and stand out in the digital landscape.
-            </p>
+            <span className="text-[var(--color-clair-mint)] font-bold uppercase tracking-widest text-sm mb-6 block">WHAT WE DO</span>
+            <h2 className="text-5xl md:text-6xl font-semibold mb-8 leading-tight">NEUÉRDE — Brand Story</h2>
+            <div className="space-y-6 text-[#AEB0B6] text-lg font-medium leading-relaxed">
+              <p>
+                A <span className="text-white font-bold">digital partner</span> for environmentally-focused startups and small businesses — helping them scale the right way, grow meaningful impact, and build a world where doing good and doing well reinforce each other.
+              </p>
+              <p>
+                <span className="text-white font-bold">Neuérde</span> does not work with brands that claim sustainability for appearances. It partners with founders who genuinely want to make a difference.
+              </p>
+              <p>
+                NEUÉRDE comes from <span className="italic text-white">neue Erde</span>, meaning <span className="text-[var(--color-clair-mint)]">"new earth"</span>—a belief that a better future is built by people who choose to build differently. While the world has raced ahead, the planet has paid the price, and mission-driven brands often struggle to be seen.
+              </p>
+            </div>
           </motion.div>
           
-          <div className="space-y-16">
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.8, delay: 0.1 }}
-            >
-              <h2 className="text-[24px] font-medium mb-4">Our Philosophy</h2>
-              <p className="text-[18px] text-[#E4E5E7] leading-relaxed">
-                Design should be simple, purposeful, and human-centered. Every pixel, every interaction—crafted with intent to deliver clarity and impact.
-              </p>
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-            >
-              <h2 className="text-[24px] font-medium mb-4">Why Choose Clair</h2>
-              <p className="text-[18px] text-[#E4E5E7] leading-relaxed">
-                We’re not just a design agency, we’re your creative growth partner. With a collaborative mindset and a sharp eye for detail, we bring your ideas to life with clarity and precision.
-              </p>
-            </motion.div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="rounded-[32px] overflow-hidden border border-white/10 shadow-2xl"
+          >
+            <img 
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop" 
+              alt="Team working" 
+              className="w-full h-full object-cover aspect-[4/3]"
+            />
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Vision & Mission Section */}
+      <section className="max-w-[1200px] mx-auto px-6 py-16 space-y-12">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="relative h-[400px] rounded-[40px] overflow-hidden group flex items-center justify-center text-center p-12"
+        >
+          <img 
+            src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070&auto=format&fit=crop" 
+            className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-1000"
+            alt="Vision Background"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[var(--color-clair-dark)]" />
+          <div className="relative z-10 max-w-3xl">
+            <h3 className="text-6xl md:text-7xl font-semibold mb-6">Vision</h3>
+            <p className="text-xl md:text-2xl text-[#E4E5E7] leading-relaxed font-medium">
+              We have a vision to be the leading global digital force, empowering sustainable brands to drive the world towards a sustainable and regenerative New Earth, referred to as (Neuérde), fueled by digital innovation.
+            </p>
           </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="relative h-[400px] rounded-[40px] overflow-hidden group flex items-center justify-center text-center p-12"
+        >
+          <img 
+            src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2071&auto=format&fit=crop" 
+            className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-1000"
+            alt="Mission Background"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[var(--color-clair-dark)]" />
+          <div className="relative z-10 max-w-3xl">
+            <h3 className="text-6xl md:text-7xl font-semibold mb-6">Mission</h3>
+            <p className="text-xl md:text-2xl text-[#E4E5E7] leading-relaxed font-medium">
+              To empower and amplify sustainable products and services worldwide, using impactful digital marketing to build a planet-first economy and inspire global consumer change.
+            </p>
+          </div>
+        </motion.div>
+      </section>
+
+      {/* Founder's Desk Section */}
+      <section className="max-w-[1200px] mx-auto px-6 py-40">
+        <div className="text-center mb-24">
+          <span className="text-[var(--color-clair-mint)] font-bold uppercase tracking-widest text-sm mb-6 block">FOUNDER'S DESK</span>
+          <h2 className="text-6xl md:text-8xl font-semibold tracking-tighter">Sustainability is the Next Economy</h2>
         </div>
 
-        <FAQ />
-      </div>
-      <ContactForm />
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 items-start">
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="space-y-8 text-[#AEB0B6] text-lg leading-relaxed"
+          >
+            <p>
+              The world has reached a tipping point. As we move through 2026, it is clear that sustainability is no longer a corporate "add-on" or a voluntary line item. It is the very foundation of the modern marketplace.
+            </p>
+            <p>
+              We are currently witnessing a <span className="text-white font-bold">Digital Renaissance</span> — an era where technology is shifting from being a source of depletion to becoming the ultimate palette for global regeneration.
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="flex flex-col items-center text-center"
+          >
+            <div className="w-full aspect-[4/5] rounded-[32px] overflow-hidden mb-8 border border-white/10 shadow-2xl">
+              <img 
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop" 
+                alt="Rachana Singh" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <h4 className="text-3xl font-semibold mb-2">Rachana Singh</h4>
+            <p className="text-[var(--color-clair-mint)] font-bold uppercase tracking-widest text-xs">Founder, Neuerde</p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="space-y-8 text-[#AEB0B6] text-lg leading-relaxed"
+          >
+            <p>
+              At Neuerde, we don't just "market" brands; we amplify movements. We believe that <span className="text-white font-bold">visibility is the next frontier of sustainability</span>. If a breakthrough innovation isn't seen, understood, or trusted, its impact is zero.
+            </p>
+            <p>
+              By integrating AI-driven insights with human-centric design, we help you turn mandatory disclosures into a competitive advantage.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* How We Work Section */}
+      <section className="max-w-[1200px] mx-auto px-6 py-24 md:py-40 border-t border-white/10">
+        <h2 className="text-5xl md:text-8xl font-semibold tracking-tighter text-center mb-20 md:mb-32">How We Work ?</h2>
+        
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6">
+          {howWeWork.map((step, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1 }}
+              className="flex flex-col bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors group h-full"
+            >
+              <span className="text-[var(--color-clair-mint)] text-6xl md:text-7xl font-bold mb-6 group-hover:scale-110 transition-transform inline-block">
+                {step.letter}
+              </span>
+              <h4 className="text-lg font-bold mb-2 leading-tight">{step.title}</h4>
+              <p className="text-xs text-[#AEB0B6] font-medium leading-relaxed">{step.desc}</p>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
       <Footer />
     </main>
   );
 };
 
 export default About;
+
+
