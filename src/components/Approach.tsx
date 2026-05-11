@@ -1,4 +1,7 @@
 import { motion } from 'framer-motion';
+import step1 from '../assets/step1.png';
+import step2 from '../assets/step2.png';
+import step3 from '../assets/step3.png';
 
 const Approach = () => {
   const steps = [
@@ -6,19 +9,19 @@ const Approach = () => {
       num: '01', 
       title: 'Connect & Evaluate', 
       desc: 'We begin by deeply understanding your brand\'s purpose, sustainability goals, and audience values.', 
-      img: 'src/assets/step1.png'
+      img: step1
     },  
     { 
       num: '02', 
       title: 'Strategy & Implementation', 
       desc: 'We design a tailored, sustainability-first marketing strategy that balances ethics with performance.', 
-      img: 'src/assets/step2.png'
+      img: step2
     },
     { 
       num: '03', 
       title: 'Execution & Scaling', 
       desc: 'We execute campaigns with continuous monitoring and optimization to ensure measurable results.', 
-      img: 'src/assets/step3.png'
+      img: step3
     },
   ];
 
