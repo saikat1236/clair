@@ -26,17 +26,17 @@ const Approach = () => {
   ];
 
   return (
-    <section className="py-48 px-6 bg-[var(--color-clair-dark)] text-white relative z-10" id="our-approach">
+    <section className="py-48 px-6 bg-[var(--color-neuerde-dark)] text-white relative z-10" id="our-approach">
       <div className="max-w-[1200px] mx-auto">
         
         {/* Header Row */}
         <div className="flex justify-between items-center mb-32">
           <div className="flex items-center gap-3">
              <div className="grid grid-cols-2 gap-1 w-5 h-5">
-                <div className="w-2.5 h-2.5 bg-[var(--color-clair-mint)] rounded-full opacity-40"></div>
-                <div className="w-2.5 h-2.5 bg-[var(--color-clair-mint)] rounded-full"></div>
-                <div className="w-2.5 h-2.5 bg-[var(--color-clair-mint)] rounded-full"></div>
-                <div className="w-2.5 h-2.5 bg-[var(--color-clair-mint)] rounded-full opacity-40"></div>
+                <div className="w-2.5 h-2.5 bg-[var(--color-neuerde-mint)] rounded-full opacity-40"></div>
+                <div className="w-2.5 h-2.5 bg-[var(--color-neuerde-mint)] rounded-full"></div>
+                <div className="w-2.5 h-2.5 bg-[var(--color-neuerde-mint)] rounded-full"></div>
+                <div className="w-2.5 h-2.5 bg-[var(--color-neuerde-mint)] rounded-full opacity-40"></div>
              </div>
              <span className="text-[14px] font-medium text-white/60 uppercase tracking-widest ml-1">Working Process</span>
           </div>
@@ -78,7 +78,7 @@ const Approach = () => {
                     {[1, 2, 3].map((dot) => (
                       <div 
                         key={dot} 
-                        className={`w-2 h-2 rounded-full ${dot <= i + 1 ? 'bg-[var(--color-clair-mint)]' : 'bg-white/10'}`}
+                        className={`w-2 h-2 rounded-full ${dot <= i + 1 ? 'bg-[var(--color-neuerde-mint)]' : 'bg-white/10'}`}
                       ></div>
                     ))}
                   </div>

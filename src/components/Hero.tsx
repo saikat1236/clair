@@ -6,7 +6,7 @@ const Hero = () => {
   const opacity = useTransform(scrollY, [0, 600], [1, 0]);
 
   return (
-    <section className="sticky h-screen flex flex-col justify-center overflow-hidden bg-[var(--color-clair-dark)] text-white z-0">
+    <section className="sticky h-screen flex flex-col justify-center overflow-hidden bg-[var(--color-neuerde-dark)] text-white z-0">
       <div className="absolute inset-0 z-0">
          <img 
            src="https://framerusercontent.com/images/ysyogWDfsxbU0BnMOcWAkReXFLw.png?width=2160&height=1371" 
@@ -22,7 +22,7 @@ const Hero = () => {
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           className="text-[42px] pt-32 md:pt-40 md:text-[70px] lg:text-[90px] font-semibold tracking-[-0.04em] leading-[1] mb-8 max-w-5xl"
         >
-          Let's Craft Your Sustainable Brand Together!
+          Let's Craft Your <span className="text-neuerde-gradient">Sustainable Brand</span> Together!
         </motion.h1>
         
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-12 mt-10">

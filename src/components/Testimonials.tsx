@@ -31,7 +31,7 @@ const Testimonials = () => {
   const column1 = [
     {
       title: "Top-Notch Experience!",
-      text: "Clair transformed our vision into a seamless digital experience. The attention to detail was unmatched!",
+      text: "Neuérde transformed our vision into a seamless digital experience. The attention to detail was unmatched!",
       author: "Alex Thompson",
       role: "CEO at BrightTech",
       img: "https://framerusercontent.com/images/nE9hvfI6RbJX4wVWWxrpY52szA.png?width=100&height=100"
@@ -48,7 +48,7 @@ const Testimonials = () => {
   const column2 = [
     {
       title: "Absolutely Thrilled!",
-      text: "Working with Clair was effortless. They delivered beyond expectations, on time, and with excellence.",
+      text: "Working with Neuérde was effortless. They delivered beyond expectations, on time, and with excellence.",
       author: "Jordan Lee",
       role: "Creative Director at PixelEdge",
       img: "https://framerusercontent.com/images/Sb9j37cB4xzAXkPZOnYLQtM2xk.png?width=101&height=101"
@@ -63,7 +63,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-48 px-6 bg-[var(--color-clair-dark)] text-white relative z-10" id="testimonials">
+    <section className="py-48 px-6 bg-[var(--color-neuerde-dark)] text-white relative z-10" id="testimonials">
       <div className="max-w-[1200px] mx-auto">
         
         {/* Badge */}
@@ -74,7 +74,7 @@ const Testimonials = () => {
             viewport={{ once: true }}
             className="flex items-center gap-2 px-4 py-1.5 bg-[rgba(255,255,255,0.03)] border border-white/10 rounded-full mb-10 backdrop-blur-md"
           >
-             <Smile size={14} className="text-[var(--color-clair-mint)]" />
+             <Smile size={14} className="text-[var(--color-neuerde-mint)]" />
              <span className="text-[12px] font-medium uppercase tracking-[0.15em] ml-0.5 opacity-80">Testimonials</span>
           </motion.div>
           
@@ -92,7 +92,7 @@ const Testimonials = () => {
             viewport={{ once: true }}
             className="text-[#AEB0B6] text-[18px] md:text-[20px] max-w-2xl mx-auto font-medium"
           >
-            Real results—see how Clair fuels growth with design, development, and strategy.
+            Real results—see how Neuérde fuels growth with design, development, and strategy.
           </motion.p>
         </div>
 
@@ -115,9 +115,9 @@ const Testimonials = () => {
             </motion.div>
 
             <div className="flex gap-1.5">
-               <div className="w-2 h-2 rounded-full bg-[var(--color-clair-mint)]"></div>
-               <div className="w-2 h-2 rounded-full bg-[var(--color-clair-mint)]"></div>
-               <div className="w-2 h-2 rounded-full bg-[var(--color-clair-mint)]"></div>
+               <div className="w-2 h-2 rounded-full bg-[var(--color-neuerde-mint)]"></div>
+               <div className="w-2 h-2 rounded-full bg-[var(--color-neuerde-mint)]"></div>
+               <div className="w-2 h-2 rounded-full bg-[var(--color-neuerde-mint)]"></div>
             </div>
 
             <motion.div 
@@ -134,9 +134,9 @@ const Testimonials = () => {
             </motion.div>
 
             <div className="flex gap-1.5">
-               <div className="w-2 h-2 rounded-full bg-[var(--color-clair-mint)]"></div>
-               <div className="w-2 h-2 rounded-full bg-[var(--color-clair-mint)]"></div>
-               <div className="w-2 h-2 rounded-full bg-[var(--color-clair-mint)]"></div>
+               <div className="w-2 h-2 rounded-full bg-[var(--color-neuerde-mint)]"></div>
+               <div className="w-2 h-2 rounded-full bg-[var(--color-neuerde-mint)]"></div>
+               <div className="w-2 h-2 rounded-full bg-[var(--color-neuerde-mint)]"></div>
             </div>
 
             <motion.div 
@@ -147,9 +147,9 @@ const Testimonials = () => {
               className="flex flex-col gap-10"
             >
               <p className="text-[16px] font-semibold leading-relaxed tracking-tight">
-                Your feedback matters! Share your experience with Clair and help us grow.
+                Your feedback matters! Share your experience with Neuérde and help us grow.
               </p>
-              <button className="bg-[var(--color-clair-mint)] text-[var(--color-clair-dark)] px-8 py-4 rounded-full font-semibold text-[16px] flex items-center justify-center gap-2 hover:scale-105 transition-transform duration-300 w-fit">
+              <button className="bg-[var(--color-neuerde-mint)] text-[var(--color-neuerde-dark)] px-8 py-4 rounded-full font-semibold text-[16px] flex items-center justify-center gap-2 hover:scale-105 transition-transform duration-300 w-fit">
                 Leave a Review <ArrowRight size={18} />
               </button>
             </motion.div>
@@ -173,9 +173,9 @@ const Testimonials = () => {
 
         {/* Bottom Dots */}
         <div className="mt-32 flex justify-center gap-1.5">
-           <div className="w-2 h-2 rounded-full bg-[var(--color-clair-mint)]"></div>
-           <div className="w-2 h-2 rounded-full bg-[var(--color-clair-mint)]"></div>
-           <div className="w-2 h-2 rounded-full bg-[var(--color-clair-mint)]"></div>
+           <div className="w-2 h-2 rounded-full bg-[var(--color-neuerde-mint)]"></div>
+           <div className="w-2 h-2 rounded-full bg-[var(--color-neuerde-mint)]"></div>
+           <div className="w-2 h-2 rounded-full bg-[var(--color-neuerde-mint)]"></div>
         </div>
 
       </div>

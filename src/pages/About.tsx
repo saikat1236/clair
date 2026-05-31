@@ -18,16 +18,16 @@ const About = () => {
   ];
 
   return (
-    <main className="bg-[var(--color-clair-dark)] min-h-screen text-white">
+    <main className="bg-[var(--color-neuerde-dark)] min-h-screen text-white">
       {/* Hero Section */}
-      <section className="bg-[var(--color-clair-dark)] pt-64 pb-48 text-center relative overflow-hidden">
+      <section className="bg-[var(--color-neuerde-dark)] pt-64 pb-48 text-center relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://framerusercontent.com/images/ysyogWDfsxbU0BnMOcWAkReXFLw.png?width=2160&height=1371" 
             alt="" 
             className="w-full h-full object-cover opacity-20"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[var(--color-clair-dark)]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[var(--color-neuerde-dark)]" />
         </div>
 
         <motion.div
@@ -37,7 +37,7 @@ const About = () => {
           className="relative z-10 px-6"
         >
           <h1 className="text-[72px] sm:text-[100px] md:text-[240px] font-semibold text-white leading-[0.8] tracking-tighter">
-            About<span className="text-[var(--color-clair-mint)]">.</span>
+            About<span className="text-[var(--color-neuerde-mint)]">.</span>
           </h1>
           <p className="mt-8 md:mt-12 text-lg md:text-2xl text-[#AEB0B6] max-w-2xl mx-auto font-medium leading-relaxed">
             Building a world where sustainability and digital innovation drive the next generation of growth.
@@ -54,8 +54,8 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <span className="text-[var(--color-clair-mint)] font-bold uppercase tracking-widest text-sm mb-6 block">WHAT WE DO</span>
-            <h2 className="text-5xl md:text-6xl font-semibold mb-8 leading-tight">NEUÉRDE — Brand Story</h2>
+            <span className="text-[var(--color-neuerde-mint)] font-bold uppercase tracking-widest text-sm mb-6 block">WHAT WE DO</span>
+            <h2 className="text-5xl md:text-6xl font-semibold mb-8 leading-tight">Neuérde — Brand Story</h2>
             <div className="space-y-6 text-[#AEB0B6] text-lg font-medium leading-relaxed">
               <p>
                 A <span className="text-white font-bold">digital partner</span> for environmentally-focused startups and small businesses — helping them scale the right way, grow meaningful impact, and build a world where doing good and doing well reinforce each other.
@@ -64,7 +64,7 @@ const About = () => {
                 <span className="text-white font-bold">Neuérde</span> does not work with brands that claim sustainability for appearances. It partners with founders who genuinely want to make a difference.
               </p>
               <p>
-                NEUÉRDE comes from <span className="italic text-white">neue Erde</span>, meaning <span className="text-[var(--color-clair-mint)]">"new earth"</span>—a belief that a better future is built by people who choose to build differently. While the world has raced ahead, the planet has paid the price, and mission-driven brands often struggle to be seen.
+                Neuérde represents a <span className="italic text-white">new earth</span>—a belief that a better future is built by people who choose to build with transparency and purpose.
               </p>
             </div>
           </motion.div>
@@ -97,7 +97,7 @@ const About = () => {
             className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-1000"
             alt="Vision Background"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[var(--color-clair-dark)]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[var(--color-neuerde-dark)]" />
           <div className="relative z-10 max-w-3xl">
             <h3 className="text-6xl md:text-7xl font-semibold mb-6">Vision</h3>
             <p className="text-xl md:text-2xl text-[#E4E5E7] leading-relaxed font-medium">
@@ -117,7 +117,7 @@ const About = () => {
             className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-1000"
             alt="Mission Background"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[var(--color-clair-dark)]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[var(--color-neuerde-dark)]" />
           <div className="relative z-10 max-w-3xl">
             <h3 className="text-6xl md:text-7xl font-semibold mb-6">Mission</h3>
             <p className="text-xl md:text-2xl text-[#E4E5E7] leading-relaxed font-medium">
@@ -130,7 +130,7 @@ const About = () => {
       {/* Founder's Desk Section */}
       <section className="max-w-[1200px] mx-auto px-6 py-40">
         <div className="text-center mb-24">
-          <span className="text-[var(--color-clair-mint)] font-bold uppercase tracking-widest text-sm mb-6 block">FOUNDER'S DESK</span>
+          <span className="text-[var(--color-neuerde-mint)] font-bold uppercase tracking-widest text-sm mb-6 block">FOUNDER'S DESK</span>
           <h2 className="text-6xl md:text-8xl font-semibold tracking-tighter">Sustainability is the Next Economy</h2>
         </div>
 
@@ -163,7 +163,7 @@ const About = () => {
               />
             </div>
             <h4 className="text-3xl font-semibold mb-2">Rachana Singh</h4>
-            <p className="text-[var(--color-clair-mint)] font-bold uppercase tracking-widest text-xs">Founder, Neuerde</p>
+            <p className="text-[var(--color-neuerde-mint)] font-bold uppercase tracking-widest text-xs">Founder, Neuerde</p>
           </motion.div>
 
           <motion.div
@@ -196,7 +196,7 @@ const About = () => {
               transition={{ delay: i * 0.1 }}
               className="flex flex-col bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors group h-full"
             >
-              <span className="text-[var(--color-clair-mint)] text-6xl md:text-7xl font-bold mb-6 group-hover:scale-110 transition-transform inline-block">
+              <span className="text-[var(--color-neuerde-mint)] text-6xl md:text-7xl font-bold mb-6 group-hover:scale-110 transition-transform inline-block">
                 {step.letter}
               </span>
               <h4 className="text-lg font-bold mb-2 leading-tight">{step.title}</h4>

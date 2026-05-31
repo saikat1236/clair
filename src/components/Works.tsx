@@ -9,14 +9,14 @@ const projects = [
 ];
 
 const BriefcaseIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" className="w-5 h-5 fill-[var(--color-clair-mint)]">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" className="w-5 h-5 fill-[var(--color-neuerde-mint)]">
     <path d="M152,112a8,8,0,0,1-8,8H112a8,8,0,0,1,0-16h32A8,8,0,0,1,152,112Zm80-40V200a16,16,0,0,1-16,16H40a16,16,0,0,1-16-16V72A16,16,0,0,1,40,56H80V48a24,24,0,0,1,24-24h48a24,24,0,0,1,24,24v8h40A16,16,0,0,1,232,72ZM96,56h64V48a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8Zm120,57.61V72H40v41.61A184,184,0,0,0,128,136,184,184,0,0,0,216,113.61Z"></path>
   </svg>
 );
 
 const Works = () => {
   return (
-    <section className="py-48 px-6 bg-[var(--color-clair-dark)] text-white relative z-10" id="work">
+    <section className="py-48 px-6 bg-[var(--color-neuerde-dark)] text-white relative z-10" id="work">
       <div className="max-w-7xl mx-auto flex flex-col items-center">
         
         {/* Section Tag */}
@@ -62,14 +62,18 @@ const Works = () => {
                   <div className="w-full h-full rounded-[8px] overflow-hidden relative">
                     <div className="absolute inset-0 bg-white/5 group-hover:bg-transparent transition-colors duration-700 ease-out z-10"></div>
                     <img src={p.img} alt={p.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 ease-out" />
+                    
+                    {/* Overlay Content */}
+                    <div className="absolute bottom-0 left-0 right-0 p-8 z-20 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+                      <div className="flex gap-3 mb-4">
+                        {p.tags.map(t => (
+                          <span key={t} className="text-[12px] font-semibold px-4 py-2 bg-[rgba(0,244,201,0.15)] text-[var(--color-neuerde-mint)] border border-white/10 rounded-full tracking-tight backdrop-blur-md">{t}</span>
+                        ))}
+                      </div>
+                      <h3 className="text-[26px] font-semibold text-white tracking-tight leading-tight">{p.title}</h3>
+                    </div>
                   </div>
                 </div>
-                <div className="flex gap-3 mb-6">
-                  {p.tags.map(t => (
-                    <span key={t} className="text-[12px] font-semibold px-4 py-2 bg-[rgba(0,244,201,0.08)] text-[var(--color-clair-mint)] border border-[rgba(0,244,201,0.1)] rounded-full tracking-tight">{t}</span>
-                  ))}
-                </div>
-                <h3 className="text-[26px] font-semibold group-hover:text-[var(--color-clair-mint)] transition-colors tracking-tight leading-tight">{p.title}</h3>
               </motion.div>
             </Link>
           ))}

@@ -9,16 +9,16 @@ const Stats = () => {
   ];
 
   return (
-    <section className="py-32 px-6 bg-[var(--color-clair-dark)] text-white">
+    <section className="py-32 px-6 bg-[var(--color-neuerde-dark)] text-white">
       <div className="max-w-7xl mx-auto">
         
         {/* Divider with Dots */}
         <div className="relative flex items-center mb-24">
           <div className="flex-1 h-[1px] bg-white/10 rounded-full"></div>
-          <div className="absolute left-1/2 -translate-x-1/2 flex gap-1.5 bg-[var(--color-clair-dark)] px-4">
-             <div className="w-2 h-2 rounded-full bg-[var(--color-clair-mint)]"></div>
-             <div className="w-2 h-2 rounded-full bg-[var(--color-clair-mint)]"></div>
-             <div className="w-2 h-2 rounded-full bg-[var(--color-clair-mint)]"></div>
+          <div className="absolute left-1/2 -translate-x-1/2 flex gap-1.5 bg-[var(--color-neuerde-dark)] px-4">
+             <div className="w-2 h-2 rounded-full bg-[var(--color-neuerde-mint)]"></div>
+             <div className="w-2 h-2 rounded-full bg-[var(--color-neuerde-mint)]"></div>
+             <div className="w-2 h-2 rounded-full bg-[var(--color-neuerde-mint)]"></div>
           </div>
         </div>
 

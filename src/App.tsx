@@ -10,7 +10,7 @@ import Blog from './pages/Blog';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-[var(--color-clair-dark)] text-white font-sans selection:bg-[var(--color-clair-mint)] selection:text-[var(--color-clair-dark)]">
+      <div className="min-h-screen bg-[var(--color-neuerde-dark)] text-white font-sans selection:bg-[var(--color-neuerde-mint)] selection:text-[var(--color-neuerde-dark)]">
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />

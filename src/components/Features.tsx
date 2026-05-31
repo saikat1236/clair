@@ -13,7 +13,7 @@ const Features = () => {
   ];
 
   return (
-    <section className="py-48 px-6 bg-[var(--color-clair-dark)] text-white overflow-hidden relative">
+    <section className="py-48 px-6 bg-[var(--color-neuerde-dark)] text-white overflow-hidden relative">
       <div className="max-w-[1300px] mx-auto relative z-10">
         
         {/* Header Section */}
@@ -24,7 +24,7 @@ const Features = () => {
             viewport={{ once: true }}
             className="flex items-center gap-2 px-4 py-1.5 bg-[rgba(255,255,255,0.03)] border border-white/10 rounded-full mb-10 backdrop-blur-md"
           >
-             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5 text-[var(--color-clair-mint)]"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5 text-[var(--color-neuerde-mint)]"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
              <span className="text-[12px] font-medium uppercase tracking-[0.15em] ml-0.5 opacity-80">Features</span>
           </motion.div>
           
@@ -127,7 +127,7 @@ const Features = () => {
               
               <div className="flex flex-wrap gap-x-6 gap-y-3 items-center select-none mt-auto">
                 {['Flexible', 'Scalable', 'Agile', 'Versatile', 'Cutting-Edge', 'Limitless', 'Next-Gen'].map((t) => (
-                  <span key={t} className="text-[17px] font-medium text-white/30 tracking-tight transition-colors hover:text-[var(--color-clair-mint)] cursor-default">{t}</span>
+                  <span key={t} className="text-[17px] font-medium text-white/30 tracking-tight transition-colors hover:text-[var(--color-neuerde-mint)] cursor-default">{t}</span>
                 ))}
               </div>
             </motion.div>

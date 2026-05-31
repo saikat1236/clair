@@ -65,10 +65,10 @@ const WorkDetail = () => {
     window.scrollTo(0, 0);
   }, [id]);
 
-  if (!project) return <div className="min-h-screen flex items-center justify-center text-white bg-[var(--color-clair-dark)]">Project not found</div>;
+  if (!project) return <div className="min-h-screen flex items-center justify-center text-white bg-[var(--color-neuerde-dark)]">Project not found</div>;
 
   return (
-    <main className="pt-40 min-h-screen flex flex-col bg-[var(--color-clair-dark)] text-white">
+    <main className="pt-40 min-h-screen flex flex-col bg-[var(--color-neuerde-dark)] text-white">
       <div className="flex-1 max-w-7xl mx-auto w-full px-6">
         <Link to="/#work" className="inline-flex items-center gap-2 text-[14px] font-medium text-white/50 hover:text-white mb-12 transition-colors">
           &larr; Back to Works
@@ -82,7 +82,7 @@ const WorkDetail = () => {
         >
           <div className="flex gap-3 mb-6">
             {project.tags.map(t => (
-              <span key={t} className="text-[12px] font-medium px-4 py-1.5 bg-[rgba(0,244,201,0.15)] text-[var(--color-clair-mint)] border border-white/5 rounded-full">{t}</span>
+              <span key={t} className="text-[12px] font-medium px-4 py-1.5 bg-[rgba(0,244,201,0.15)] text-[var(--color-neuerde-mint)] border border-white/5 rounded-full">{t}</span>
             ))}
           </div>
           <h1 className="text-[42px] md:text-[80px] font-semibold tracking-tight mb-8 max-w-4xl leading-[1]">{project.title}</h1>
@@ -113,7 +113,7 @@ const WorkDetail = () => {
               <h3 className="text-[12px] font-bold uppercase tracking-[0.1em] text-white/40 mb-2">Date</h3>
               <p className="text-[18px] font-medium">{project.date}</p>
             </div>
-            <a href="https://framer.com" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 bg-[var(--color-clair-mint)] text-[var(--color-clair-dark)] px-6 py-4 rounded-full font-semibold hover:scale-105 transition-transform w-full mt-4 text-[16px] duration-300">
+            <a href="https://framer.com" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 bg-[var(--color-neuerde-mint)] text-[var(--color-neuerde-dark)] px-6 py-4 rounded-full font-semibold hover:scale-105 transition-transform w-full mt-4 text-[16px] duration-300">
               Visit website &nearr;
             </a>
           </div>

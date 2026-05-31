@@ -8,7 +8,7 @@ const projects = [
 
 const LatestWorks = () => {
   return (
-    <section className="py-24 bg-[var(--color-clair-dark)] text-white">
+    <section className="py-24 bg-[var(--color-neuerde-dark)] text-white">
       <h2 className="text-[40px] font-medium mb-12">Latest Works</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {projects.map((p, i) => (
@@ -28,7 +28,7 @@ const LatestWorks = () => {
                   <span key={t} className="text-[12px] font-medium px-3 py-1.5 border border-white/20 rounded-full text-[#E4E5E7]">{t}</span>
                 ))}
               </div>
-              <h3 className="text-[24px] font-medium group-hover:text-[var(--color-clair-mint)] transition-colors">{p.title}</h3>
+              <h3 className="text-[24px] font-medium group-hover:text-[var(--color-neuerde-mint)] transition-colors">{p.title}</h3>
             </motion.div>
           </Link>
         ))}

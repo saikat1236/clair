@@ -36,7 +36,7 @@ const FAQ = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="py-48 px-6 bg-[var(--color-clair-dark)] text-white relative z-10" id="faq">
+    <section className="py-48 px-6 bg-[var(--color-neuerde-dark)] text-white relative z-10" id="faq">
       <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-16 md:gap-24">
         
         {/* Left: Heading */}
@@ -75,7 +75,7 @@ const FAQ = () => {
                 className="w-full py-8 text-left flex justify-between items-center transition-colors focus:outline-none"
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
               >
-                <span className="font-medium text-[18px] md:text-[22px] tracking-tight group-hover:text-[var(--color-clair-mint)] transition-colors">{faq.q}</span>
+                <span className="font-medium text-[18px] md:text-[22px] tracking-tight group-hover:text-[var(--color-neuerde-mint)] transition-colors">{faq.q}</span>
                 <span className={`text-[24px] md:text-[32px] font-light text-[#AEB0B6] transition-transform duration-300 ${openIndex === i ? 'rotate-45' : ''}`}>+</span>
               </button>
               <AnimatePresence>

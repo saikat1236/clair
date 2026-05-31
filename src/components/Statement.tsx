@@ -15,14 +15,14 @@ const Statement = () => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   return (
-    <section className="relative z-10 py-32 bg-[var(--color-clair-light)] text-[var(--color-clair-dark)] overflow-hidden" ref={containerRef}>
+    <section className="relative z-10 py-32 bg-[var(--color-neuerde-light)] text-[var(--color-neuerde-dark)] overflow-hidden" ref={containerRef}>
       <div className="max-w-7xl mx-auto px-6 text-center mb-24">
         <motion.h2 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
-          className="text-[32px] md:text-[51px] font-medium leading-[1.2] max-w-4xl mx-auto text-[var(--color-clair-dark)]/80 tracking-tight"
+          className="text-[32px] md:text-[51px] font-medium leading-[1.2] max-w-4xl mx-auto text-[var(--color-neuerde-dark)]/80 tracking-tight"
         >
 At Neuérde, every pixel counts.
 We transform bold ideas into captivating digital experiences that drive real growth. Let’s create magic together.
@@ -57,7 +57,7 @@ We transform bold ideas into captivating digital experiences that drive real gro
 
       {/* Logo Ticker */}
       <div className="mt-32">
-        <p className="text-[14px] font-semibold text-[var(--color-clair-dark)]/50 text-center mb-12 uppercase tracking-[0.1em]">
+        <p className="text-[14px] font-semibold text-[var(--color-neuerde-dark)]/50 text-center mb-12 uppercase tracking-[0.1em]">
           Trusted by 100+ businesses across the world
         </p>
         

@@ -17,7 +17,7 @@ const Works = () => {
   }, []);
 
   return (
-    <main className="pt-40 min-h-screen flex flex-col bg-[var(--color-clair-dark)] text-white">
+    <main className="pt-40 min-h-screen flex flex-col bg-[var(--color-neuerde-dark)] text-white">
       <div className="flex-1 max-w-7xl mx-auto w-full px-6">
         
         <motion.div 
@@ -48,7 +48,7 @@ const Works = () => {
                     <span key={t} className="text-[12px] font-medium px-3 py-1.5 border border-white/20 rounded-full text-[#E4E5E7]">{t}</span>
                   ))}
                 </div>
-                <h3 className="text-[24px] font-medium group-hover:text-[var(--color-clair-mint)] transition-colors">{p.title}</h3>
+                <h3 className="text-[24px] font-medium group-hover:text-[var(--color-neuerde-mint)] transition-colors">{p.title}</h3>
               </motion.div>
             </Link>
           ))}

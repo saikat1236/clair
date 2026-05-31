@@ -10,7 +10,7 @@ const Contact = () => {
   }, []);
 
   return (
-    <main className="pt-40 min-h-screen flex flex-col bg-[var(--color-clair-dark)] text-white">
+    <main className="pt-40 min-h-screen flex flex-col bg-[var(--color-neuerde-dark)] text-white">
       <div className="flex-1 max-w-7xl mx-auto w-full px-6">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}

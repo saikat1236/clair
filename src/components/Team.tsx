@@ -16,7 +16,7 @@ const TeamMember = ({ name, role, desc, img, delay }: { name: string, role: stri
       <p className="text-[#AEB0B6] text-[15px] leading-relaxed font-medium">{desc}</p>
       <div>
         <div className="text-[18px] font-bold tracking-tight">{name}</div>
-        <div className="text-[14px] text-[var(--color-clair-mint)] font-semibold uppercase tracking-wider mt-1">{role}</div>
+        <div className="text-[14px] text-[var(--color-neuerde-mint)] font-semibold uppercase tracking-wider mt-1">{role}</div>
       </div>
     </div>
   </motion.div>
@@ -27,7 +27,7 @@ const Team = () => {
     {
       name: "Ava Reynolds",
       role: "Creative Director",
-      desc: "Ava shapes Clair’s vision, turning ideas into impactful designs with 10+ years in UX/UI and branding.",
+      desc: "Ava shapes Neuérde’s vision, turning ideas into impactful designs with 10+ years in UX/UI and branding.",
       img: "https://framerusercontent.com/images/nYcj04ualCtRoNjNtYpgouehGg.png"
     },
     {
@@ -45,7 +45,7 @@ const Team = () => {
   ];
 
   return (
-    <section className="py-48 px-6 bg-[var(--color-clair-dark)] text-white relative z-10" id="team">
+    <section className="py-48 px-6 bg-[var(--color-neuerde-dark)] text-white relative z-10" id="team">
       <div className="max-w-[1200px] mx-auto">
         
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-24 mb-20 md:mb-32 items-end">
@@ -56,7 +56,7 @@ const Team = () => {
               viewport={{ once: true }}
               className="text-[42px] md:text-[80px] font-semibold mb-2 tracking-[-0.04em] leading-[1]"
             >
-              Meet the Clair Team
+              Meet the Neuérde Team
             </motion.h2>
             <p className="text-[#AEB0B6] text-[18px] md:text-[22px] leading-relaxed font-medium">
               A passionate team of strategists, designers, and developers dedicated to crafting exceptional digital experiences.
@@ -68,7 +68,7 @@ const Team = () => {
                 <p className="text-[16px] text-[#AEB0B6] font-medium max-w-sm">
                   Our talented team goes beyond design and development—we collaborate, innovate, and bring ideas to life.
                 </p>
-                <button className="flex items-center gap-2 text-[18px] font-bold hover:text-[var(--color-clair-mint)] transition-colors group">
+                <button className="flex items-center gap-2 text-[18px] font-bold hover:text-[var(--color-neuerde-mint)] transition-colors group">
                   Explore Our Team <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                 </button>
              </div>
