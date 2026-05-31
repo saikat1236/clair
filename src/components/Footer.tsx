@@ -3,11 +3,11 @@ import { ArrowRight } from 'lucide-react';
 import logo from '../assets/logo.png';
 
 const Footer = () => (
-  <footer className="bg-[var(--color-neuerde-dark)] text-white px-6 pt-48 pb-12 border-t border-white/10 relative z-10">
+  <footer className="bg-[var(--color-neuerde-dark)] text-white px-6 pt-12 pb-12 border-t border-white/10 relative z-10">
     <div className="max-w-[1200px] mx-auto flex flex-col gap-32">
       
       {/* Top Row: Giant Logo and Link Groups */}
-      <div className="flex flex-col lg:flex-row justify-between items-start gap-20">
+      <div className="flex flex-col lg:flex-row justify-between items-start gap-10">
         
         {/* Left: Giant Logo */}
         <div className="flex flex-col gap-12">
@@ -66,7 +66,7 @@ const Footer = () => (
       </div>
 
       {/* Bottom Row: Contact Info */}
-      <div className="flex flex-col lg:flex-row justify-between items-end gap-12 border-t border-white/10 pt-16">
+      <div className="flex flex-col lg:flex-row justify-between items-end gap-12 border-t border-white/10 pt-10">
         <div className="flex flex-col gap-2 text-[14px] font-medium text-white/40">
            <p>© {new Date().getFullYear()} Saikat. All rights reserved.</p>
            <p>Designed by Saikat Biswas, Built with React</p>

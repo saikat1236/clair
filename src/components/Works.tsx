@@ -16,7 +16,7 @@ const BriefcaseIcon = () => (
 
 const Works = () => {
   return (
-    <section className="py-48 px-6 bg-[var(--color-neuerde-dark)] text-white relative z-10" id="work">
+    <section className="py-12 px-6 bg-[var(--color-neuerde-dark)] text-white relative z-10" id="work">
       <div className="max-w-7xl mx-auto flex flex-col items-center">
         
         {/* Section Tag */}
@@ -49,7 +49,7 @@ const Works = () => {
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-24 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10 w-full">
           {projects.map((p, i) => (
             <Link to={`/works/${p.id}`} key={p.id} className="group block">
               <motion.div 

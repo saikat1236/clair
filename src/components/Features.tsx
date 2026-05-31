@@ -13,7 +13,7 @@ const Features = () => {
   ];
 
   return (
-    <section className="py-48 px-6 bg-[var(--color-neuerde-dark)] text-white overflow-hidden relative">
+    <section className="py-12 px-6 bg-[var(--color-neuerde-dark)] text-white overflow-hidden relative">
       <div className="max-w-[1300px] mx-auto relative z-10">
         
         {/* Header Section */}

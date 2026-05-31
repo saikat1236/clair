@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 const ContactForm = () => {
   return (
-    <section className="py-48 px-6 bg-[var(--color-neuerde-dark)] text-white relative overflow-hidden z-10" id="contact">
+    <section className="py-12 px-6 bg-[var(--color-neuerde-dark)] text-white relative overflow-hidden z-10" id="contact">
       {/* Background Image Effect */}
       <div className="absolute inset-0 z-0">
         <img 

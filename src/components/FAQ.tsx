@@ -36,7 +36,7 @@ const FAQ = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="py-48 px-6 bg-[var(--color-neuerde-dark)] text-white relative z-10" id="faq">
+    <section className="py-12 px-6 bg-[var(--color-neuerde-dark)] text-white relative z-10" id="faq">
       <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-16 md:gap-24">
         
         {/* Left: Heading */}

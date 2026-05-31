@@ -63,7 +63,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-48 px-6 bg-[var(--color-neuerde-dark)] text-white relative z-10" id="testimonials">
+    <section className="py-12 px-6 bg-[var(--color-neuerde-dark)] text-white relative z-10" id="testimonials">
       <div className="max-w-[1200px] mx-auto">
         
         {/* Badge */}

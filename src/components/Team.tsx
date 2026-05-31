@@ -45,7 +45,7 @@ const Team = () => {
   ];
 
   return (
-    <section className="py-48 px-6 bg-[var(--color-neuerde-dark)] text-white relative z-10" id="team">
+    <section className="py-12 px-6 bg-[var(--color-neuerde-dark)] text-white relative z-10" id="team">
       <div className="max-w-[1200px] mx-auto">
         
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-24 mb-20 md:mb-32 items-end">
