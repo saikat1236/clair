@@ -6,12 +6,12 @@
 
 @theme {
   --font-sans: "Onest", "Segoe UI", Roboto, sans-serif;
-  --color-neuerde-dark: #000028;
-  --color-neuerde-light: #EDEBE8;
-  --color-neuerde-white: #FBFAF9;
-  --color-neuerde-mint: #D946EF;
-  --color-neuerde-accent: #3B82F6;
-  --gradient-neuerde: linear-gradient(135deg, #D946EF 0%, #3B82F6 100%);
+  --color-neuerde-dark: #020b2f;
+  --color-neuerde-light: #e5f8ff;
+  --color-neuerde-white: #f8fbff;
+  --color-neuerde-mint: #00f5b0;
+  --color-neuerde-accent: #2c9cff;
+  --gradient-neuerde: linear-gradient(135deg, #2c9cff 0%, #00f5b0 100%);
 }
 
 @utility bg-neuerde-gradient {

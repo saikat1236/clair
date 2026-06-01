@@ -30,7 +30,7 @@ We transform bold ideas into captivating digital experiences that drive real gro
       </div>
 
       {/* Smooth Continuous Slideshow */}
-      <div className="relative w-full h-[500px] md:h-[600px] select-none overflow-hidden flex items-center bg-green-950">
+      <div className="relative w-full h-[500px] md:h-[600px] select-none overflow-hidden flex items-center bg-[#03A696]">
         <motion.div 
           className="flex gap-8 items-center min-w-max"
           animate={{ x: ["0%", "-50%"] }}

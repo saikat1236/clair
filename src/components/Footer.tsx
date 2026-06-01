@@ -27,7 +27,7 @@ const Footer = () => (
                 placeholder="Your Email" 
                 className="flex-1 bg-[rgba(255,255,255,0.03)] border border-white/10 rounded-full px-8 py-5 text-[16px] text-white placeholder:text-white/20 focus:outline-none focus:border-neuerde-mint/30 transition-all duration-300"
               />
-              <button className="bg-neuerde-gradient text-white w-14 h-14 rounded-full flex items-center justify-center hover:scale-105 transition-transform duration-300 shrink-0 shadow-lg shadow-fuchsia-500/20">
+              <button className="bg-neuerde-gradient text-white w-14 h-14 rounded-full flex items-center justify-center hover:scale-105 transition-transform duration-300 shrink-0 shadow-[0_20px_40px_rgba(0,245,176,0.2)]">
                 <ArrowRight size={22} strokeWidth={2.5} />
               </button>
             </div>
@@ -47,19 +47,19 @@ const Footer = () => (
           </div>
           <div className="flex flex-col gap-5 text-[18px] font-medium">
             <a href="https://x.com/" target="_blank" rel="noreferrer" className="text-[#AEB0B6] hover:text-white transition-colors flex items-center justify-between group">
-              Twitter <ArrowRight size={16} className="text-[#3B82F6] opacity-0 group-hover:opacity-100 transition-opacity rotate-[-45deg]" />
+              Twitter <ArrowRight size={16} className="text-[var(--color-neuerde-accent)] opacity-0 group-hover:opacity-100 transition-opacity rotate-[-45deg]" />
             </a>
             <a href="https://linkedin.com/" target="_blank" rel="noreferrer" className="text-[#AEB0B6] hover:text-white transition-colors flex items-center justify-between group">
-              LinkedIn <ArrowRight size={16} className="text-[#3B82F6] opacity-0 group-hover:opacity-100 transition-opacity rotate-[-45deg]" />
+              LinkedIn <ArrowRight size={16} className="text-[var(--color-neuerde-accent)] opacity-0 group-hover:opacity-100 transition-opacity rotate-[-45deg]" />
             </a>
             <a href="https://instagram.com/" target="_blank" rel="noreferrer" className="text-[#AEB0B6] hover:text-white transition-colors flex items-center justify-between group">
-              Instagram <ArrowRight size={16} className="text-[#3B82F6] opacity-0 group-hover:opacity-100 transition-opacity rotate-[-45deg]" />
+              Instagram <ArrowRight size={16} className="text-[var(--color-neuerde-accent)] opacity-0 group-hover:opacity-100 transition-opacity rotate-[-45deg]" />
             </a>
             <a href="https://behance.net/" target="_blank" rel="noreferrer" className="text-[#AEB0B6] hover:text-white transition-colors flex items-center justify-between group">
-              Behance <ArrowRight size={16} className="text-[#3B82F6] opacity-0 group-hover:opacity-100 transition-opacity rotate-[-45deg]" />
+              Behance <ArrowRight size={16} className="text-[var(--color-neuerde-accent)] opacity-0 group-hover:opacity-100 transition-opacity rotate-[-45deg]" />
             </a>
             <a href="https://dribbble.com/" target="_blank" rel="noreferrer" className="text-[#AEB0B6] hover:text-white transition-colors flex items-center justify-between group">
-              Dribbble <ArrowRight size={16} className="text-[#3B82F6] opacity-0 group-hover:opacity-100 transition-opacity rotate-[-45deg]" />
+              Dribbble <ArrowRight size={16} className="text-[var(--color-neuerde-accent)] opacity-0 group-hover:opacity-100 transition-opacity rotate-[-45deg]" />
             </a>
           </div>
         </div>
