@@ -2,26 +2,33 @@ import { motion } from 'framer-motion';
 import step1 from '../assets/step1.png';
 import step2 from '../assets/step2.png';
 import step3 from '../assets/step3.png';
+import step4 from '../assets/step4.png';
 
 const Approach = () => {
   const steps = [
     { 
       num: '01', 
-      title: 'Connect & Evaluate', 
-      desc: 'We begin by deeply understanding your brand\'s purpose, sustainability goals, and audience values.', 
+      title: 'Connect & Understand', 
+      desc: "We begin by getting under the skin of your business — your goals, your audience, your competitors, and the gaps your current digital presence isn't filling.", 
       img: step1
     },  
     { 
       num: '02', 
-      title: 'Strategy & Implementation', 
-      desc: 'We design a tailored, sustainability-first marketing strategy that balances ethics with performance.', 
+      title: 'Strategy & Positioning', 
+      desc: 'We build a bespoke digital strategy tailored to your market — channel mix, content architecture, and a clear roadmap from where you are to where you want to be.', 
       img: step2
     },
     { 
       num: '03', 
-      title: 'Execution & Scaling', 
-      desc: 'We execute campaigns with continuous monitoring and optimization to ensure measurable results.', 
+      title: 'Execution & Delivery', 
+      desc: 'Our team activates across every agreed channel with precision — on time, on brief, and with full transparency at every stage.', 
       img: step3
+    },
+    { 
+      num: '04', 
+      title: 'Growth & Optimisation', 
+      desc: 'We measure everything, learn fast, and continuously optimise — so your results compound over time rather than plateau.', 
+      img: step4
     },
   ];
 
@@ -38,13 +45,13 @@ const Approach = () => {
                 <div className="w-2.5 h-2.5 bg-[var(--color-neuerde-mint)] rounded-full"></div>
                 <div className="w-2.5 h-2.5 bg-[var(--color-neuerde-mint)] rounded-full opacity-40"></div>
              </div>
-             <span className="text-[14px] font-medium text-white/60 uppercase tracking-widest ml-1">Working Process</span>
+             <span className="text-[14px] font-medium text-white/60 uppercase tracking-widest ml-1">How We Work</span>
           </div>
-          <h2 className="text-[20px] font-medium text-white/60 tracking-tight">We Research, We Strategize, We Drive Results</h2>
+           <h2 className="text-[20px] font-medium text-white/60 tracking-tight">We Research, We Strategise, We Drive Results.</h2>
         </div>
 
         {/* Horizontal Row with Staggered Scroll Reveal */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 items-start">
           
           {steps.map((s, i) => (
             <motion.div 
@@ -94,5 +101,34 @@ const Approach = () => {
     </section>
   );
 };
+
+        <div className="mt-24 md:mt-32 max-w-5xl">
+          <div className="flex items-center gap-3 mb-6">
+            <span className="text-[14px] font-medium text-[var(--color-neuerde-mint)] uppercase tracking-widest">Why Sustainable Businesses Choose Us</span>
+          </div>
+          <h3 className="text-[30px] md:text-[48px] font-semibold tracking-[-0.04em] leading-[1.05] mb-8 max-w-4xl">
+            We Don't Just Run Campaigns. We Understand Your World.
+          </h3>
+          <p className="text-[#AEB0B6] text-[18px] md:text-[20px] leading-relaxed font-medium max-w-4xl mb-10">
+            Sustainable businesses face challenges most agencies haven't encountered — complex value propositions, discerning audiences, greenwashing risk, and the pressure to prove impact alongside profit. We've built our practice around exactly these challenges.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+              <h4 className="text-[20px] font-semibold mb-3">We Speak the Language</h4>
+              <p className="text-[#94969D] leading-relaxed">B Corp. ESG. Scope 3. Lifecycle assessments. Conscious consumer behaviour. You won't spend the first three meetings bringing us up to speed — we arrive ready to work.</p>
+            </div>
+            <div>
+              <h4 className="text-[20px] font-semibold mb-3">We Protect Your Integrity</h4>
+              <p className="text-[#94969D] leading-relaxed">Every campaign we run for a sustainable business is built to communicate impact honestly. We never overstate, greenwash, or simplify your credentials into slogans. Your audience is too smart for that — and so are we.</p>
+            </div>
+            <div>
+              <h4 className="text-[20px] font-semibold mb-3">We Measure What Matters</h4>
+              <p className="text-[#94969D] leading-relaxed">Growth metrics. Audience trust signals. Content authority. ESG narrative reach. We build attribution frameworks that connect your digital activity to the outcomes your business actually cares about.</p>
+            </div>
+          </div>
+          <a href="#contact" className="inline-flex mt-10 text-[16px] font-semibold text-[var(--color-neuerde-mint)] hover:opacity-80 transition-opacity">
+            Learn How We Work With Sustainable Businesses →
+          </a>
+        </div>
 
 export default Approach;

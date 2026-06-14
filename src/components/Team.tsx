@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
 
 const TeamMember = ({ name, role, desc, img, delay }: { name: string, role: string, desc: string, img: string, delay: number }) => (
   <motion.div 
@@ -27,13 +26,13 @@ const Team = () => {
     {
       name: "Ava Reynolds",
       role: "Creative Director",
-      desc: "Ava shapes Neuérde’s vision, turning ideas into impactful designs with 10+ years in UX/UI and branding.",
+      desc: "Ava leads Neuérde's creative vision with 10+ years in UX/UI and branding — bringing clarity, purpose, and craft to every sustainable business she works with.",
       img: "https://framerusercontent.com/images/nYcj04ualCtRoNjNtYpgouehGg.png"
     },
     {
       name: "Sophia Bennett",
       role: "Lead UX Strategist",
-      desc: "Sophia creates easy-to-use experiences by mixing research, design, and psychology for smooth interaction.",
+      desc: "Sophia combines research, design, and behavioural psychology to build digital experiences that feel effortless — and convert. Her work sits at the intersection of empathy and precision.",
       img: "https://framerusercontent.com/images/zrj0Q82duwHMFQAdS26iyp6mGs.png"
     },
     {
@@ -56,21 +55,18 @@ const Team = () => {
               viewport={{ once: true }}
               className="text-[42px] md:text-[80px] font-semibold mb-2 tracking-[-0.04em] leading-[1]"
             >
-              Meet the Neuérde Team
+                Meet the Neuérdian’s.
             </motion.h2>
             <p className="text-[#AEB0B6] text-[18px] md:text-[22px] leading-relaxed font-medium">
-              A passionate team of strategists, designers, and developers dedicated to crafting exceptional digital experiences.
+                A team of strategists, designers, and developers who chose to specialise in sustainable businesses — because we believe the most important brands in the world deserve the best digital work.
             </p>
           </div>
           
           <div className="md:col-span-6 md:pb-4 flex md:justify-end">
              <div className="flex flex-col gap-6 md:items-end text-left md:text-right">
                 <p className="text-[16px] text-[#AEB0B6] font-medium max-w-sm">
-                  Our talented team goes beyond design and development—we collaborate, innovate, and bring ideas to life.
+                    [Additional team members — headshots, names, roles, and one-line bios to be supplied by agency before launch.]
                 </p>
-                <button className="flex items-center gap-2 text-[18px] font-bold hover:text-[var(--color-neuerde-mint)] transition-colors group">
-                  Explore Our Team <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-                </button>
              </div>
           </div>
         </div>

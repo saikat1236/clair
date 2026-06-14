@@ -25,7 +25,7 @@ const Features = () => {
             className="flex items-center gap-2 px-4 py-1.5 bg-[rgba(255,255,255,0.03)] border border-white/10 rounded-full mb-10 backdrop-blur-md"
           >
              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5 text-[var(--color-neuerde-mint)]"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
-             <span className="text-[12px] font-medium uppercase tracking-[0.15em] ml-0.5 opacity-80">Features</span>
+             <span className="text-[12px] font-medium uppercase tracking-[0.15em] ml-0.5 opacity-80">Why Neuérde</span>
           </motion.div>
           
           <motion.h2 
@@ -34,7 +34,7 @@ const Features = () => {
             viewport={{ once: true }}
             className="text-[48px] md:text-[80px] font-semibold mb-8 tracking-tight leading-[1] max-w-4xl"
           >
-            Results-Driven Innovation
+            The Digital Partner Sustainable Businesses Have Been Looking For.
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -42,7 +42,7 @@ const Features = () => {
             viewport={{ once: true }}
             className="text-[#AEB0B6] text-[18px] md:text-[22px] max-w-3xl mx-auto font-medium leading-relaxed"
           >
-            We craft high-performing digital experiences that engage and scale effortlessly.
+            We combine deep digital expertise with a genuine understanding of the sustainable business world — so you never have to explain why your mission matters.
           </motion.p>
         </div>
 
@@ -58,9 +58,9 @@ const Features = () => {
               className="border border-white/5 rounded-[40px] p-12 flex flex-col overflow-hidden group relative min-h-[760px] shadow-2xl h-full"
             >
               <div className="relative z-20">
-                <h3 className="text-[28px] font-semibold mb-6 tracking-tight">Always Here for You</h3>
+                <h3 className="text-[28px] font-semibold mb-6 tracking-tight">We Speak Your Language</h3>
                 <p className="text-[#94969D] text-[18px] leading-relaxed font-medium max-w-[280px]">
-                  Always-on expert support team available to maintain seamless project performance, stability, and long-term success.
+                  We understand B Corp, ESG, lifecycle assessments, and conscious consumer behaviour. You won't spend half the project briefing us on your world — we already live in it.
                 </p>
               </div>
               
@@ -90,9 +90,9 @@ const Features = () => {
               className="border border-white/5 rounded-[40px] p-12 flex flex-col overflow-hidden group shadow-2xl min-h-[364px] flex-1"
             >
               <div>
-                <h3 className="text-[28px] font-semibold mb-6 tracking-tight">Your Expert Partners</h3>
+                <h3 className="text-[28px] font-semibold mb-6 tracking-tight">Specialists, Not Generalists</h3>
                 <p className="text-[#94969D] text-[18px] leading-relaxed font-medium">
-                  Passionate experts committed to crafting your ideas into impactful digital experiences with care.
+                  We've chosen to focus on sustainable businesses because we believe purpose-driven companies deserve digital partners who truly understand their market, their audience, and their growth challenges.
                 </p>
               </div>
               
@@ -119,14 +119,14 @@ const Features = () => {
               className="border border-white/5 rounded-[40px] p-12 flex flex-col justify-between overflow-hidden group shadow-2xl min-h-[364px] flex-1"
             >
               <div>
-                <h3 className="text-[28px] font-semibold mb-6 tracking-tight">Endless Creative Potential</h3>
+                <h3 className="text-[28px] font-semibold mb-6 tracking-tight">Results You Can Measure</h3>
                 <p className="text-[#94969D] text-[18px] leading-relaxed font-medium mb-10">
-                  Innovative, adaptable solutions that evolve with your business needs for lasting success and advantage.
+                  Every campaign, every website, every piece of content is tied to measurable outcomes — traffic, leads, conversions, and revenue. Impact without attribution is just activity.
                 </p>
               </div>
               
               <div className="flex flex-wrap gap-x-6 gap-y-3 items-center select-none mt-auto">
-                {['Flexible', 'Scalable', 'Agile', 'Versatile', 'Cutting-Edge', 'Limitless', 'Next-Gen'].map((t) => (
+                {['Traffic', 'Leads', 'Conversions', 'Revenue'].map((t) => (
                   <span key={t} className="text-[17px] font-medium text-white/30 tracking-tight transition-colors hover:text-[var(--color-neuerde-mint)] cursor-default">{t}</span>
                 ))}
               </div>
@@ -152,9 +152,9 @@ const Features = () => {
               </div>
               
               <div className="p-12 mt-auto">
-                <h3 className="text-[28px] font-semibold mb-6 tracking-tight">Seamless & Stress-Free</h3>
+                <h3 className="text-[28px] font-semibold mb-6 tracking-tight">A Seamless Partnership</h3>
                 <p className="text-[#94969D] text-[18px] leading-relaxed font-medium">
-                  A seamless, structured process that ensures clarity, efficiency, and consistent high-quality results with precision and trust.
+                  From strategy to execution, we work as an extension of your team — transparent, responsive, and committed to your long-term growth, not just the next deliverable.
                 </p>
               </div>
             </motion.div>

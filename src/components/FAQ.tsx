@@ -3,33 +3,33 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const faqs = [
   { 
-    q: 'Why does Neuerde only work with eco-friendly and sustainable businesses?', 
-    a: 'Our mission is to accelerate the shift to a sustainable economy. We believe the biggest barrier for conscious consumers is clarity and trust. By focusing on verifiable eco-friendly brands, we align our skills with our values, ensuring our execution always promotes a positive impact.' 
+    q: 'Why does Neuérde specialise in sustainable businesses?', 
+    a: "We chose this niche deliberately. Sustainable businesses face a unique digital challenge — their value proposition is more complex, their audience is more discerning, and the cost of getting the messaging wrong is higher. Generic agencies apply generic solutions. We've built our entire approach around the specific growth challenges of eco-conscious brands, purpose-driven companies, and ESG-focused organisations. It's not just what we do — it's what we're good at." 
   },
   { 
-    q: 'How can you guarantee that showcasing my eco-benefits will lead to immediate sales?', 
-    a: "We don't guarantee sales, but we guarantee performance improvements. Our strategies are rooted in Impact-to-Conversion Testing. We prove that by simplifying your complex claims (e.g., carbon footprint reduction) into easily digestible narratives, consumer confidence and purchase intent increase dramatically." 
+    q: 'Will better digital marketing actually lead to more sales for my business?', 
+    a: "We don't guarantee sales — no honest agency does. What we guarantee is measurable performance improvement. Our strategies are built around translating your credentials into clear, compelling digital experiences that increase consumer confidence and purchase intent. We test, measure, and optimise until the numbers move — and we show you exactly what's working and why." 
   },
   { 
-    q: 'What is the "Sustainable Value Audit" you mention?', 
-    a: 'It is the foundational first step. We conduct a thorough review, including a SWOT Analysis, to understand your unique environmental strengths and communication challenges. The result is a written, actionable plan detailing the exact content and campaigns needed to make your audience instantly buy based on your integrity.' 
+    q: 'What is the Digital Growth Audit and what does it include?', 
+    a: 'The Digital Growth Audit is our starting point for every new client. We conduct a thorough review of your current digital presence/ Social media channel— SEO performance, website conversion, content gaps, competitor positioning, and audience behavior. The output is a written, actionable plan detailing exactly what needs to change and in what order to accelerate your digital growth.' 
   },
   { 
-    q: 'Are you a full-service marketing agency?', 
-    a: 'We are a specialized full-service agency. We handle everything from strategy and web development to performance marketing and SMM, but our entire focus is on leveraging sustainability as the core engine for digital growth and profitability.' 
+    q: 'Are you a full-service digital agency?', 
+    a: "Yes — we handle everything from brand strategy and web development to SEO, content marketing, social media, and performance advertising. The difference is that our entire approach is calibrated for the businesses we serve — so every service we deliver is informed by a deep understanding of your target market and conscious audience that helps you achieve your mission. " 
   },
   { 
-    q: 'What is your typical pricing structure?', 
-    a: 'Our projects are Primarily structured as 1) Fixed-Fee Strategy & Audit (due to the intensive research required); followed by 2) Retainer-Based Execution & Testing. This ensures transparency and a predictable cost for the initial blueprint.' 
+    q: 'What does your pricing look like?', 
+    a: "We start with a free Digital Growth Audit — a thorough review of your current digital presence, social media channels, existing content, SEO performance, and competitor positioning. From there, every engagement is fully customisable. We don't believe in one-size-fits-all packages. Based on what the audit uncovers, we build a tailored scope around your actual." 
   },
   { 
-    q: 'Do you offer services a la carte (e.g., just the SWOT analysis)?', 
-    a: 'Yes, the Sustainable Value Audit (including the SWOT and Written Plan of Action) can be a standalone engagement. However, the highest ROI is achieved when we execute the plan we develop, as we specialize in the unique communication needs of eco-friendly brands.' 
+    q: 'Can I commission the audit without a full retainer?', 
+    a: 'Yes. The Digital Growth Audit is complimentary for all new clients. The deliverable is a focused assessment highlighting your key content gaps, underperforming areas, and priority opportunities across your digital presence — presented as a clear, actionable overview rather than a full execution plan. The decision to proceed beyond the audit rests entirely with you.' 
   },
   { 
-    q: 'How does your pricing compare to a standard agency?', 
-    a: 'Our rates reflect our specialization and deep expertise in translating complex environmental data into high-converting digital assets. We aim for long-term partnership, viewing our services as an investment in sustainable growth that pays for itself by dramatically increasing your average customer value (ACV) and brand trust.' 
-  },
+    q: 'How does Neuérde\'s pricing compare to a standard agency?', 
+    a: "Our rates reflect specialisation and depth. A generalist agency will charge less upfront — but you\'ll spend significant time and budget educating them on your world, correcting generic approaches, and recovering from messaging that misses your audience. We come ready. Our clients consistently find the investment aligned with better targeting, higher conversion, and stronger brand trust." 
+  }
 ];
 
 const FAQ = () => {
@@ -47,7 +47,7 @@ const FAQ = () => {
             viewport={{ once: true }}
             className="text-[48px] md:text-[80px] font-semibold tracking-[-0.04em] leading-[1]"
           >
-            FAQ
+            Everything You Need to Know About Working With Neuérde.
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -56,7 +56,7 @@ const FAQ = () => {
             transition={{ delay: 0.1 }}
             className="text-[#AEB0B6] text-[16px] md:text-[18px] leading-relaxed font-medium max-w-[340px]"
           >
-            Got questions? We’ve got answers. Here’s everything you need to know about our services, process, and pricing.
+            From our process to our pricing — here are the answers our clients ask most.
           </motion.p>
         </div>
 

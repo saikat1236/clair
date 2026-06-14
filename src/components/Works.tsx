@@ -37,7 +37,7 @@ const Works = () => {
             viewport={{ once: true }}
             className="text-[44px] md:text-[64px] font-semibold mb-8 tracking-[-0.04em] leading-[1.1]"
           >
-            Innovative Solutions Showcase
+            Ideas Built to Last. Work Built to Perform.
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -45,7 +45,7 @@ const Works = () => {
             viewport={{ once: true }}
             className="text-[#AEB0B6] text-[20px] max-w-2xl mx-auto font-medium"
           >
-            Explore our work and see how we turn ideas into impactful designs.
+            From brand identities to full digital experiences — here's a look at what we've been building.
           </motion.p>
         </div>
 
@@ -78,6 +78,10 @@ const Works = () => {
             </Link>
           ))}
         </div>
+
+        <Link to="/works" className="mt-16 text-[16px] font-semibold text-[var(--color-neuerde-mint)] hover:opacity-80 transition-opacity">
+          View All Projects →
+        </Link>
       </div>
     </section>
   );

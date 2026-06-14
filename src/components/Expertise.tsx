@@ -4,29 +4,29 @@ const Expertise = () => {
   const services = [
     {
       num: '01',
-      title: 'Website Development',
-      desc: 'We build custom websites that clearly showcase your sustainable value through transparent tools and intuitive user journeys and long-term value instantly clear to users.',
+      title: 'Web Development',
+      desc: 'Fast, precise, conversion-focused. We build websites that make your value immediately clear — designed for the user, engineered for performance, and built to grow with your business.',
       tags: ['Web', 'Design', 'UI/UX'],
       img: 'https://framerusercontent.com/images/NV6QbP3oUFxQUAj0mrypAcUz9s.png'
     },
     {
       num: '02',
-      title: 'Content Marketing',
-      desc: 'We create clear, compelling content that simplifies sustainability, helping audiences understand your impact and choose what\'s best for them and the planet.',
-      tags: ['Content', 'Strategy', 'Copywriting'],
+      title: 'ESG Content Strategy',
+      desc: 'We turn complex sustainability credentials into clear, compelling content — building topical authority, audience trust, and a content engine that works long after publication.',
+      tags: ['Content Strategy', 'Copywriting', 'Impact Storytelling'],
       img: 'https://framerusercontent.com/images/I4ZACCCvPsB5E21Gqukxf3Fero.png'
     },
     {
       num: '03',
       title: 'Social Media Management',
-      desc: 'We manage your social channels daily, build trust, and grow a loyal community—turning complex sustainability into clear, engaging content your audience believes.',
+      desc: 'We manage your social channels with the consistency and depth your audience deserves — building a community that trusts your brand and advocates for your mission.',
       tags: ['Social', 'Community', 'Growth'],
       img: 'https://framerusercontent.com/images/eanrefUQRjJOGvG9rqaM6Drbo4.png'
     },
     {
       num: '04',
-      title: 'Search Engine Optimization',
-      desc: 'We optimize your digital presence with high-intent sustainability keywords, helping conscious consumers find and trust your brand—driving high-quality organic growth.',
+      title: 'SEO for Sustainable Brands',
+      desc: 'We help sustainable businesses own the search terms their ideal customers use — building organic visibility that compounds over time and attracts audiences who are already looking for what you offer.',
       tags: ['SEO', 'Growth', 'Keywords'],
       img: 'https://framerusercontent.com/images/eanrefUQRjJOGvG9rqaM6Drbo4.png'
     },
@@ -34,8 +34,15 @@ const Expertise = () => {
     {
       num: '05',
       title: 'Performance Marketing',
-      desc: 'We deliver ethical digital ads with measurable ROI, targeting sustainability-minded consumers while respecting your mission and without wasting your budget.',
+      desc: 'Targeted, measurable, and built around your actual goals. We run advertising campaigns that reach the right people, at the right moment, without wasting a single rupee of your budget.',
       tags: ['Ads', 'ROI', 'Performance'],
+      img: 'https://framerusercontent.com/images/WUM7m0CWh8OIbwVSHQHOQKDlMQ0.png'
+    },
+    {
+      num: '06',
+      title: 'Brand Marketing',
+      desc: 'From visual identity to messaging architecture — we build brands that are impossible to mistake and hard to forget. Strategy and craft, working together.',
+      tags: ['Branding', 'Strategy', 'Identity'],
       img: 'https://framerusercontent.com/images/WUM7m0CWh8OIbwVSHQHOQKDlMQ0.png'
     },
 
@@ -64,7 +71,7 @@ const Expertise = () => {
             viewport={{ once: true }}
             className="text-[52px] md:text-[88px] font-semibold mb-8 tracking-[-0.05em] leading-[1] max-w-5xl"
           >
-            Our Digital Marketing Services
+            Sharp Thinking. Precise Execution. Measurable Growth.
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -72,7 +79,7 @@ const Expertise = () => {
             viewport={{ once: true }}
             className="text-[#AEB0B6] text-[18px] md:text-[22px] max-w-3xl mx-auto font-medium leading-relaxed"
           >
-            Discover how our expertise turns concepts into high-impact digital experiences.
+            Five disciplines. One integrated team. Built for businesses that take their digital presence seriously.
           </motion.p>
         </div>
 

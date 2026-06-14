@@ -31,7 +31,7 @@ const Nav = () => {
       </div>
 
       <div className="flex items-center gap-4 pointer-events-auto">
-        <Link to="https://calendly.com/contact-neuerde/30min?month=2025-12" className="hidden sm:inline-block bg-neuerde-gradient text-white px-[20px] md:px-[24px] py-[10px] md:py-[14px] rounded-full font-semibold text-[14px] md:text-[16px] hover:scale-105 transition-transform duration-300">
+        <Link to="https://calendly.com/contact-neuerde/30min?month=2025-12" className="hidden sm:inline-block bg-neuerde-gradient text-black px-[20px] md:px-[24px] py-[10px] md:py-[14px] rounded-full font-semibold text-[14px] md:text-[16px] hover:scale-105 transition-transform duration-300">
           Start Your Project
         </Link>
         
@@ -66,7 +66,7 @@ const Nav = () => {
             <Link 
               to="https://calendly.com/contact-neuerde/30min?month=2025-12"
               onClick={() => setIsOpen(false)}
-              className="mt-4 bg-neuerde-gradient text-white text-center py-4 rounded-2xl font-bold text-lg"
+              className="mt-4 bg-neuerde-gradient text-black text-center py-4 rounded-2xl font-bold text-lg"
             >
               Start Your Project
             </Link>
