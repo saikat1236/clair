@@ -16,16 +16,7 @@ const Hero = () => {
       </div>
 
       <motion.div style={{ y, opacity }} className="max-w-7xl mx-auto w-full z-10 px-6 pb-16 pt-30 relative">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="mb-8"
-        >
-          <span className="text-[12px] md:text-[14px] font-bold uppercase tracking-[0.2em] text-[var(--color-neuerde-mint)]">
-            DIGITAL AGENCY FOR SUSTAINABLE BUSINESSES  ·  ESG  ·  IMPACT MARKETING
-          </span>
-        </motion.div>
+
 
         <motion.h1 
           initial={{ opacity: 0, y: 30 }}
@@ -35,6 +26,16 @@ const Hero = () => {
         >
           Where Scientific Rigor Meets <span className="text-neuerde-gradient">Digital Dominance.</span>
         </motion.h1>
+                <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="mb-8"
+        >
+          <span className="text-[12px] md:text-[14px] font-bold uppercase tracking-[0.2em] text-[var(--color-neuerde-mint)]">
+            DIGITAL AGENCY FOR SUSTAINABLE BUSINESSES  ·  ESG  ·  IMPACT MARKETING
+          </span>
+        </motion.div>
         
         <div className="flex flex-col md:flex-row justify-between items-start gap-12 mt-10">
           <motion.p 
