@@ -34,7 +34,7 @@ const Features = () => {
             viewport={{ once: true }}
             className="text-[48px] md:text-[80px] font-semibold mb-8 tracking-tight leading-[1] max-w-4xl"
           >
-            The Digital Partner Sustainable Businesses Have Been Looking For.
+            The Digital Partner <span className="text-neuerde-gradient">Sustainable Businesses</span> Have Been Looking For.
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
