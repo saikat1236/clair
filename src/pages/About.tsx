@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Footer from '../components/Footer';
+import Team from '../components/Team';
 
 const About = () => {
   useEffect(() => {
@@ -40,7 +42,7 @@ const About = () => {
             About<span className="text-[var(--color-neuerde-mint)]">.</span>
           </h1>
           <p className="mt-8 md:mt-12 text-lg md:text-2xl text-[#AEB0B6] max-w-2xl mx-auto font-medium leading-relaxed">
-            Building a world where sustainability and digital innovation drive the next generation of growth.
+            A digital agency built for the businesses building a better economy.
           </p>
         </motion.div>
       </section>
@@ -55,16 +57,19 @@ const About = () => {
             transition={{ duration: 0.8 }}
           >
             <span className="text-[var(--color-neuerde-mint)] font-bold uppercase tracking-widest text-sm mb-6 block">WHAT WE DO</span>
-            <h2 className="text-5xl md:text-6xl font-semibold mb-8 leading-tight">Neuérde — Brand Story</h2>
+            <h2 className="text-5xl md:text-6xl font-semibold mb-8 leading-tight">Neuérde — Our Story</h2>
             <div className="space-y-6 text-[#AEB0B6] text-lg font-medium leading-relaxed">
               <p>
-                A <span className="text-white font-bold">digital partner</span> for environmentally-focused startups and small businesses — helping them scale the right way, grow meaningful impact, and build a world where doing good and doing well reinforce each other.
+                Neuérde is a digital agency built for one purpose — helping sustainable businesses grow with the same caliber of strategy, design, and execution that any ambitious brand deserves.
               </p>
               <p>
-                <span className="text-white font-bold">Neuérde</span> does not work with brands that claim sustainability for appearances. It partners with founders who genuinely want to make a difference.
+                We made a deliberate choice early on. While most agencies chase every industry, we chose to go deep into one — the businesses building products and services that genuinely make the world better. Environmentally-focused startups. ESG-driven companies. Founders who are building something real, not just something marketable.
               </p>
               <p>
-                Neuérde represents a <span className="italic text-white">new earth</span>—a belief that a better future is built by people who choose to build with transparency and purpose.
+                That choice shapes everything we do. We understand the language, the audience, and the unique challenges of this space — so our clients spend less time briefing us and more time growing.
+              </p>
+              <p>
+                We work with brands that have something true to say. Our job is making sure the world hears it.
               </p>
             </div>
           </motion.div>
@@ -77,7 +82,7 @@ const About = () => {
           >
             <img 
               src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop" 
-              alt="Team working" 
+              alt="Neuérde team — digital agency for sustainable businesses" 
               className="w-full h-full object-cover aspect-[4/3]"
             />
           </motion.div>
@@ -99,9 +104,9 @@ const About = () => {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[var(--color-neuerde-dark)]" />
           <div className="relative z-10 max-w-3xl">
-            <h3 className="text-6xl md:text-7xl font-semibold mb-6">Vision</h3>
+            <h2 className="text-6xl md:text-7xl font-semibold mb-6">Vision</h2>
             <p className="text-xl md:text-2xl text-[#E4E5E7] leading-relaxed font-medium">
-              We have a vision to be the leading global digital force, empowering sustainable brands to drive the world towards a sustainable and regenerative New Earth, referred to as (Neuérde), fueled by digital innovation.
+              To be the digital partner of choice for sustainable businesses worldwide — known for combining sharp strategy, exceptional design, and a genuine understanding of what makes purpose-driven brands succeed.
             </p>
           </div>
         </motion.div>
@@ -119,9 +124,9 @@ const About = () => {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[var(--color-neuerde-dark)]" />
           <div className="relative z-10 max-w-3xl">
-            <h3 className="text-6xl md:text-7xl font-semibold mb-6">Mission</h3>
+            <h2 className="text-6xl md:text-7xl font-semibold mb-6">Mission</h2>
             <p className="text-xl md:text-2xl text-[#E4E5E7] leading-relaxed font-medium">
-              To empower and amplify sustainable products and services worldwide, using impactful digital marketing to build a planet-first economy and inspire global consumer change.
+              To give sustainable businesses the digital presence, visibility, and growth strategy they need to compete — and win — against brands with bigger budgets but smaller missions.
             </p>
           </div>
         </motion.div>
@@ -131,7 +136,7 @@ const About = () => {
       <section className="max-w-[1200px] mx-auto px-6 py-40">
         <div className="text-center mb-24">
           <span className="text-[var(--color-neuerde-mint)] font-bold uppercase tracking-widest text-sm mb-6 block">FOUNDER'S DESK</span>
-          <h2 className="text-6xl md:text-8xl font-semibold tracking-tighter">Sustainability is the Next Economy</h2>
+          <h2 className="text-6xl md:text-8xl font-semibold tracking-tighter">Sustainability Is the Next Economy</h2>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 items-start">
@@ -142,10 +147,10 @@ const About = () => {
             className="space-y-8 text-[#AEB0B6] text-lg leading-relaxed"
           >
             <p>
-              The world has reached a tipping point. As we move through 2026, it is clear that sustainability is no longer a corporate "add-on" or a voluntary line item. It is the very foundation of the modern marketplace.
+              The world has reached a tipping point. As we move through 2026, <Link to="/blog" className="text-[var(--color-neuerde-mint)] hover:underline">sustainability is no longer a corporate add-on</Link> or a voluntary line item — it's becoming the foundation of how the modern marketplace operates.
             </p>
             <p>
-              We are currently witnessing a <span className="text-white font-bold">Digital Renaissance</span> — an era where technology is shifting from being a source of depletion to becoming the ultimate palette for global regeneration.
+              For digital agencies, this shifts the brief entirely. Brands with genuine sustainability credentials need to communicate complex value — supply chains, certifications, impact data — in ways that build trust rather than skepticism. That's a different skill set to standard brand marketing, and it's the one we've built our practice around.
             </p>
           </motion.div>
 
@@ -158,12 +163,12 @@ const About = () => {
             <div className="w-full aspect-[4/5] rounded-[32px] overflow-hidden mb-8 border border-white/10 shadow-2xl">
               <img 
                 src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop" 
-                alt="Rachana Singh" 
+                alt="Rachana Singh, Founder of Neuérde" 
                 className="w-full h-full object-cover"
               />
             </div>
-            <h4 className="text-3xl font-semibold mb-2">Rachana Singh</h4>
-            <p className="text-[var(--color-neuerde-mint)] font-bold uppercase tracking-widest text-xs">Founder, Neuerde</p>
+            <h3 className="text-3xl font-semibold mb-2">Rachana Singh</h3>
+            <p className="text-[var(--color-neuerde-mint)] font-bold uppercase tracking-widest text-xs">FOUNDER, NEUÉRDE</p>
           </motion.div>
 
           <motion.div
@@ -173,14 +178,16 @@ const About = () => {
             className="space-y-8 text-[#AEB0B6] text-lg leading-relaxed"
           >
             <p>
-              At Neuerde, we don't just "market" brands; we amplify movements. We believe that <span className="text-white font-bold">visibility is the next frontier of sustainability</span>. If a breakthrough innovation isn't seen, understood, or trusted, its impact is zero.
+              We don't just run campaigns for our clients — we help them build visibility for things that matter. A brilliant sustainable product with no visibility has zero impact. Our job is to close that gap.
             </p>
             <p>
-              By integrating AI-driven insights with human-centric design, we help you turn mandatory disclosures into a competitive advantage.
+              We bring sharp strategy and genuine craft to brands that have something real to say — and we make sure the right people hear it, see it, and trust it.
             </p>
           </motion.div>
         </div>
       </section>
+
+      <Team />
 
       {/* How We Work Section */}
       <section className="max-w-[1200px] mx-auto px-6 py-24 md:py-40 border-t border-white/10">
