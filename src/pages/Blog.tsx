@@ -15,7 +15,7 @@ const blogPosts = [
   },
   {
     id: 2,
-    title: "ESG Consulting in 2025: Why Sustainability Is Now a Business Imperative",
+    title: "ESG Consulting: Sustainability Is Now a Business Imperative",
     date: "December 27, 2025",
     comments: "No Comments",
     excerpt: "Building The New Earth: Why Visibility Is The Next Frontier Of Sustainability A new earth doesn't begin when the world changes – it begins...",
@@ -29,6 +29,15 @@ const blogPosts = [
     comments: "No Comments",
     excerpt: "Building The New Earth: Why Visibility Is The Next Frontier Of Sustainability A new earth doesn't begin when the world changes – it begins...",
     category: "Sustainable",
+    image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=2013&auto=format&fit=crop"
+  },
+    {
+    id: 4,
+    title: "Visibility is the next frontier of sustainability.",
+    date: "December 19, 2025",
+    comments: "No Comments",
+    excerpt: "Building The New Earth: Why Visibility Is The Next Frontier Of Sustainability A new earth doesn't begin when the world changes – it begins...",
+    category: "Re-Cycle",
     image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=2013&auto=format&fit=crop"
   }
 ];

@@ -55,7 +55,7 @@ const EsgContentStrategy = () => {
           className="relative z-10 px-6"
         >
           <span className="text-[var(--color-neuerde-mint)] font-bold uppercase tracking-widest text-sm mb-6 block">ESG CONTENT STRATEGY</span>
-          <h1 className="text-5xl md:text-7xl font-semibold text-white leading-tight max-w-4xl mx-auto">Your ESG Story Is Complex. We Make It Impossible to Misunderstand.</h1>
+          <h1 className="text-5xl md:text-7xl font-semibold text-white leading-tight max-w-4xl mx-auto">Your ESG Story Is Complex. We Make It Impossible to <span className="text-neuerde-gradient">Misunderstand.</span></h1>
           <p className="mt-8 text-lg md:text-xl text-[#AEB0B6] max-w-3xl mx-auto font-medium leading-relaxed">
             We turn complex sustainability credentials into clear, compelling content that builds topical authority, earns audience trust, and keeps working long after publication.
           </p>

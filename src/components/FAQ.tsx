@@ -47,7 +47,7 @@ const FAQ = () => {
             viewport={{ once: true }}
             className="text-[48px] md:text-[80px] font-semibold tracking-[-0.04em] leading-[1]"
           >
-            Everything You Need to Know About Working With Neuérde.
+            Everything You Need to Know About Working With <span className='text-neuerde-gradient'>Neuérde</span>.
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}

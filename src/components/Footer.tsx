@@ -10,7 +10,7 @@ const Footer = () => (
       <div className="flex flex-col lg:flex-row justify-between items-start gap-10">
         
         {/* Left: Giant Logo */}
-        <div className="flex flex-col gap-12">
+        <div className="flex flex-col gap-6">
           <div className="flex items-center gap-6">
             <img src={logo} alt="Neuérde Logo" className="w-20 h-20 md:w-32 md:h-32 rounded-3xl object-cover" />
             <h1 className="text-6xl md:text-9xl font-semibold tracking-tighter leading-[0.8] text-neuerde-gradient">Neuérde</h1>

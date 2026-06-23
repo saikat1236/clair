@@ -1,10 +1,12 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Expertise = () => {
   const services = [
     {
       num: '01',
       title: 'Web Development',
+      route: '/services/web-development',
       desc: 'Fast, precise, conversion-focused. We build websites that make your value immediately clear — designed for the user, engineered for performance, and built to grow with your business.',
       tags: ['Web', 'Design', 'UI/UX'],
       img: 'https://framerusercontent.com/images/NV6QbP3oUFxQUAj0mrypAcUz9s.png'
@@ -12,6 +14,7 @@ const Expertise = () => {
     {
       num: '02',
       title: 'ESG Content Strategy',
+      route: '/services/esg-content-strategy',
       desc: 'We turn complex sustainability credentials into clear, compelling content — building topical authority, audience trust, and a content engine that works long after publication.',
       tags: ['Content Strategy', 'Copywriting', 'Impact Storytelling'],
       img: 'https://framerusercontent.com/images/I4ZACCCvPsB5E21Gqukxf3Fero.png'
@@ -19,6 +22,7 @@ const Expertise = () => {
     {
       num: '03',
       title: 'Social Media Management',
+      route: '/services/social-media-management',
       desc: 'We manage your social channels with the consistency and depth your audience deserves — building a community that trusts your brand and advocates for your mission.',
       tags: ['Social', 'Community', 'Growth'],
       img: 'https://framerusercontent.com/images/eanrefUQRjJOGvG9rqaM6Drbo4.png'
@@ -26,6 +30,7 @@ const Expertise = () => {
     {
       num: '04',
       title: 'SEO for Sustainable Brands',
+      route: '/services/seo-for-sustainable-brands',
       desc: 'We help sustainable businesses own the search terms their ideal customers use — building organic visibility that compounds over time and attracts audiences who are already looking for what you offer.',
       tags: ['SEO', 'Growth', 'Keywords'],
       img: 'https://framerusercontent.com/images/eanrefUQRjJOGvG9rqaM6Drbo4.png'
@@ -34,6 +39,7 @@ const Expertise = () => {
     {
       num: '05',
       title: 'Performance Marketing',
+      route: '/services/performance-marketing',
       desc: 'Targeted, measurable, and built around your actual goals. We run advertising campaigns that reach the right people, at the right moment, without wasting a single rupee of your budget.',
       tags: ['Ads', 'ROI', 'Performance'],
       img: 'https://framerusercontent.com/images/WUM7m0CWh8OIbwVSHQHOQKDlMQ0.png'
@@ -41,6 +47,7 @@ const Expertise = () => {
     {
       num: '06',
       title: 'Brand Marketing',
+      route: '/services/brand-marketing',
       desc: 'From visual identity to messaging architecture — we build brands that are impossible to mistake and hard to forget. Strategy and craft, working together.',
       tags: ['Branding', 'Strategy', 'Identity'],
       img: 'https://framerusercontent.com/images/WUM7m0CWh8OIbwVSHQHOQKDlMQ0.png'
@@ -71,7 +78,7 @@ const Expertise = () => {
             viewport={{ once: true }}
             className="text-[52px] md:text-[88px] font-semibold mb-8 tracking-[-0.05em] leading-[1] max-w-5xl"
           >
-            Sharp Thinking. Precise Execution. Measurable Growth.
+            Sharp Thinking.<span className="text-neuerde-gradient"> Precise Execution.</span> Measurable Growth.
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -84,46 +91,55 @@ const Expertise = () => {
         </div>
 
         {/* Services List */}
-        <div className="flex flex-col gap-40">
-          {services.map((s) => (
-            <motion.div 
-              key={s.num}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center group"
-            >
-              <div className="md:col-span-1">
-                <span className="text-[20px] font-bold tracking-tighter opacity-40">{s.num}</span>
-              </div>
-              
-              <div className="md:col-span-6 flex flex-col gap-8">
-                <div>
-                  <h3 className="text-[32px] md:text-[40px] font-semibold mb-6 tracking-tight group-hover:text-[var(--color-neuerde-mint)] transition-colors">{s.title}</h3>
-                  <p className="text-[#94969D] text-[18px] leading-relaxed font-medium">
-                    {s.desc}
-                  </p>
+        <div className="flex flex-col gap-12">
+          {services.slice(0, 3).map((s, index) => (
+            <Link to={s.route} key={s.num}>
+              <motion.div 
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+                className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center group cursor-pointer"
+              >
+                <div className={`md:col-span-1 ${index % 2 !== 0 ? 'md:order-3' : ''}`}>
+                  <span className="text-[20px] font-bold tracking-tighter opacity-40">{s.num}</span>
                 </div>
                 
-                <div className="flex flex-wrap gap-x-8 gap-y-4">
-                  {s.tags.map(tag => (
-                    <span key={tag} className="text-[14px] font-medium text-white/40 tracking-tight">{tag}</span>
-                  ))}
+                <div className={`md:col-span-6 flex flex-col gap-8 ${index % 2 !== 0 ? 'md:order-2' : ''}`}>
+                  <div>
+                    <h3 className="text-[32px] md:text-[40px] font-semibold mb-6 tracking-tight group-hover:text-[var(--color-neuerde-mint)] transition-colors">{s.title}</h3>
+                    <p className="text-[#94969D] text-[18px] leading-relaxed font-medium">
+                      {s.desc}
+                    </p>
+                  </div>
+                  
+                  <div className="flex flex-wrap gap-x-8 gap-y-4">
+                    {s.tags.map(tag => (
+                      <span key={tag} className="text-[14px] font-medium text-white/40 tracking-tight">{tag}</span>
+                    ))}
+                  </div>
                 </div>
-              </div>
 
-              <div className="md:col-span-5">
-                <div className="rounded-[24px] overflow-hidden border border-white/5 bg-[#0A0A0C] shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]">
-                  <img 
-                    src={s.img} 
-                    alt={s.title} 
-                    className="w-full h-auto object-cover aspect-[4/3]"
-                  />
+                <div className={`md:col-span-5 ${index % 2 !== 0 ? 'md:order-1' : ''}`}>
+                  <div className="rounded-[24px] overflow-hidden border border-white/5 bg-[#0A0A0C] shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]">
+                    <img 
+                      src={s.img} 
+                      alt={s.title} 
+                      className="w-full h-auto object-cover aspect-[4/3]"
+                    />
+                  </div>
                 </div>
-              </div>
-            </motion.div>
+              </motion.div>
+            </Link>
           ))}
+        </div>
+        
+        <div className="mt-20 text-center">
+          <Link to="/services">
+            <button className="bg-[var(--color-neuerde-mint)] text-[var(--color-neuerde-dark)] font-semibold px-8 py-4 rounded-full hover:bg-white transition-colors">
+              Show More Services
+            </button>
+          </Link>
         </div>
       </div>
     </section>

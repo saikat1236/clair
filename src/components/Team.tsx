@@ -55,7 +55,7 @@ const Team = () => {
               viewport={{ once: true }}
               className="text-[42px] md:text-[80px] font-semibold mb-2 tracking-[-0.04em] leading-[1]"
             >
-                Meet the Neuérdian’s.
+                Meet the <span className="text-neuerde-gradient">Neuérdian</span>’s.
             </motion.h2>
             <p className="text-[#AEB0B6] text-[18px] md:text-[22px] leading-relaxed font-medium">
                 A team of strategists, designers, and developers who chose to specialise in sustainable businesses — because we believe the most important brands in the world deserve the best digital work.

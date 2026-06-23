@@ -17,14 +17,23 @@ const ContactForm = () => {
         
         {/* Left: Text */}
         <div className="md:col-span-6 flex flex-col justify-center">
+
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="text-[52px] md:text-[88px] font-semibold mb-8 tracking-[-0.05em] leading-[1]"
           >
-            Tell Us What You're Building.
+            Lets know What You're <span className="text-neuerde-gradient">Building.</span>
           </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+              className="text-[var(--color-neuerde-mint)] font-bold uppercase tracking-widest text-sm mb-6"
+          >
+            Looking for a creative partner? Start your journey here.
+          </motion.p>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -32,7 +41,7 @@ const ContactForm = () => {
             transition={{ delay: 0.1 }}
             className="text-[#AEB0B6] text-[18px] md:text-[22px] leading-relaxed font-medium max-w-md"
           >
-            Whether it's a brand refresh, a new website, an SEO overhaul, or a full digital strategy — we'd love to hear about it. We'll come back to you within one business day.
+            Whether it's a <span className='text-[var(--color-white)] font-bold'>brand refresh</span>, a new website, an SEO overhaul, or a full <span className='text-[var(--color-white)] font-bold'>digital strategy</span> — we'd love to hear about it. We'll come back to you within one business day.
           </motion.p>
         </div>
 

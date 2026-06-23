@@ -46,49 +46,6 @@ const About = () => {
           </p>
         </motion.div>
       </section>
-
-      {/* Brand Story Section */}
-      <section className="max-w-[1200px] mx-auto px-6 py-32">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <span className="text-[var(--color-neuerde-mint)] font-bold uppercase tracking-widest text-sm mb-6 block">WHAT WE DO</span>
-            <h2 className="text-5xl md:text-6xl font-semibold mb-8 leading-tight">Neuérde — Our Story</h2>
-            <div className="space-y-6 text-[#AEB0B6] text-lg font-medium leading-relaxed">
-              <p>
-                Neuérde is a digital agency built for one purpose — helping sustainable businesses grow with the same caliber of strategy, design, and execution that any ambitious brand deserves.
-              </p>
-              <p>
-                We made a deliberate choice early on. While most agencies chase every industry, we chose to go deep into one — the businesses building products and services that genuinely make the world better. Environmentally-focused startups. ESG-driven companies. Founders who are building something real, not just something marketable.
-              </p>
-              <p>
-                That choice shapes everything we do. We understand the language, the audience, and the unique challenges of this space — so our clients spend less time briefing us and more time growing.
-              </p>
-              <p>
-                We work with brands that have something true to say. Our job is making sure the world hears it.
-              </p>
-            </div>
-          </motion.div>
-          
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            className="rounded-[32px] overflow-hidden border border-white/10 shadow-2xl"
-          >
-            <img 
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop" 
-              alt="Neuérde team — digital agency for sustainable businesses" 
-              className="w-full h-full object-cover aspect-[4/3]"
-            />
-          </motion.div>
-        </div>
-      </section>
-
       {/* Vision & Mission Section */}
       <section className="max-w-[1200px] mx-auto px-6 py-16 space-y-12">
         <motion.div
@@ -132,11 +89,55 @@ const About = () => {
         </motion.div>
       </section>
 
+      {/* Brand Story Section */}
+      <section className="max-w-[1200px] mx-auto px-6 py-32">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <span className="text-[var(--color-neuerde-mint)] font-bold uppercase tracking-widest text-sm mb-6 block">WHAT WE DO</span>
+            <h2 className="text-5xl md:text-6xl font-semibold mb-8 leading-tight"><span className="text-neuerde-gradient">Neuérde</span> — Our Story</h2>
+            <div className="space-y-6 text-[#AEB0B6] text-lg font-medium leading-relaxed">
+              <p>
+                Neuérde is a digital agency built for one purpose — helping sustainable businesses grow with the same caliber of strategy, design, and execution that any ambitious brand deserves.
+              </p>
+              <p>
+                We made a deliberate choice early on. While most agencies chase every industry, we chose to go deep into one — the businesses building products and services that genuinely make the world better. Environmentally-focused startups. ESG-driven companies. Founders who are building something real, not just something marketable.
+              </p>
+              <p>
+                That choice shapes everything we do. We understand the language, the audience, and the unique challenges of this space — so our clients spend less time briefing us and more time growing.
+              </p>
+              <p>
+                We work with brands that have something true to say. Our job is making sure the world hears it.
+              </p>
+            </div>
+          </motion.div>
+          
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="rounded-[32px] overflow-hidden border border-white/10 shadow-2xl"
+          >
+            <img 
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop" 
+              alt="Neuérde team — digital agency for sustainable businesses" 
+              className="w-full h-full object-cover aspect-[4/3]"
+            />
+          </motion.div>
+        </div>
+      </section>
+
+
+
       {/* Founder's Desk Section */}
       <section className="max-w-[1200px] mx-auto px-6 py-40">
         <div className="text-center mb-24">
           <span className="text-[var(--color-neuerde-mint)] font-bold uppercase tracking-widest text-sm mb-6 block">FOUNDER'S DESK</span>
-          <h2 className="text-6xl md:text-8xl font-semibold tracking-tighter">Sustainability Is the Next Economy</h2>
+          <h2 className="text-6xl md:text-8xl font-semibold tracking-tighter"><span className="text-neuerde-gradient">Sustainability</span> Is the Next Economy</h2>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 items-start">

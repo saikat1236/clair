@@ -18,7 +18,7 @@ const Contact = () => {
           transition={{ duration: 0.6 }}
           className="mb-16 text-center max-w-4xl mx-auto"
         >
-          <h1 className="text-[58px] md:text-[80px] font-semibold tracking-tight mb-8 leading-[1]">Let's build something magical together</h1>
+          <h1 className="text-[58px] md:text-[80px] font-semibold tracking-tight mb-8 leading-[1]">Let's build something <span className="text-neuerde-gradient">together</span>!</h1>
           <p className="text-[18px] text-[#E4E5E7] leading-relaxed">Reach out and let's get started on your next project.</p>
         </motion.div>
         
