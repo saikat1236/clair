@@ -1,6 +1,6 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import Footer from '../components/Footer';
 import Team from '../components/Team';
 
@@ -8,6 +8,18 @@ const About = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const scrollRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: scrollRef,
+    offset: ['start start', 'end end']
+  });
+
+  const visionOpacity = useTransform(scrollYProgress, [0, 0.45], [1, 0]);
+  const visionScale = useTransform(scrollYProgress, [0, 0.45], [1, 0.9]);
+  
+  const missionOpacity = useTransform(scrollYProgress, [0.55, 1], [0, 1]);
+  const missionScale = useTransform(scrollYProgress, [0.55, 1], [0.9, 1]);
 
   const howWeWork = [
     { letter: 'N', title: 'New Discovery Call', desc: 'Unearthing Your Unique Story' },
@@ -47,46 +59,46 @@ const About = () => {
         </motion.div>
       </section>
       {/* Vision & Mission Section */}
-      <section className="max-w-[1200px] mx-auto px-6 py-16 space-y-12">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="relative h-[400px] rounded-[40px] overflow-hidden group flex items-center justify-center text-center p-12"
-        >
-          <img 
-            src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070&auto=format&fit=crop" 
-            className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-1000"
-            alt="Vision Background"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[var(--color-neuerde-dark)]" />
-          <div className="relative z-10 max-w-3xl">
-            <h2 className="text-6xl md:text-7xl font-semibold mb-6">Vision</h2>
-            <p className="text-xl md:text-2xl text-[#E4E5E7] leading-relaxed font-medium">
-              To be the digital partner of choice for sustainable businesses worldwide — known for combining sharp strategy, exceptional design, and a genuine understanding of what makes purpose-driven brands succeed.
-            </p>
-          </div>
-        </motion.div>
+      <section ref={scrollRef} className="h-[200vh] max-w-[1200px] mx-auto px-6 py-16">
+        <div className="sticky top-16 md:top-24 h-[80vh]">
+          {/* Vision */}
+          <motion.div
+            style={{ opacity: visionOpacity, scale: visionScale }}
+            className="relative h-full rounded-[40px] overflow-hidden group flex items-center justify-center text-center p-6 md:p-12"
+          >
+            <img 
+              src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070&auto=format&fit=crop" 
+              className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
+              alt="Vision Background"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[var(--color-neuerde-dark)]/70 to-[var(--color-neuerde-dark)]" />
+            <div className="relative z-10 max-w-3xl">
+              <h2 className="text-5xl md:text-7xl font-semibold mb-6">Vision</h2>
+              <p className="text-lg md:text-2xl text-[#E4E5E7] leading-relaxed font-medium">
+                To be the digital partner of choice for sustainable businesses worldwide — known for combining sharp strategy, exceptional design, and a genuine understanding of what makes purpose-driven brands succeed.
+              </p>
+            </div>
+          </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="relative h-[400px] rounded-[40px] overflow-hidden group flex items-center justify-center text-center p-12"
-        >
-          <img 
-            src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2071&auto=format&fit=crop" 
-            className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-1000"
-            alt="Mission Background"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[var(--color-neuerde-dark)]" />
-          <div className="relative z-10 max-w-3xl">
-            <h2 className="text-6xl md:text-7xl font-semibold mb-6">Mission</h2>
-            <p className="text-xl md:text-2xl text-[#E4E5E7] leading-relaxed font-medium">
-              To give sustainable businesses the digital presence, visibility, and growth strategy they need to compete — and win — against brands with bigger budgets but smaller missions.
-            </p>
-          </div>
-        </motion.div>
+          {/* Mission */}
+          <motion.div
+            style={{ opacity: missionOpacity, scale: missionScale }}
+            className="absolute top-0 left-0 h-full w-full rounded-[40px] overflow-hidden group flex items-center justify-center text-center p-6 md:p-12"
+          >
+            <img 
+              src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2071&auto=format&fit=crop" 
+              className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
+              alt="Mission Background"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[var(--color-neuerde-dark)]/70 to-[var(--color-neuerde-dark)]" />
+            <div className="relative z-10 max-w-3xl">
+              <h2 className="text-5xl md:text-7xl font-semibold mb-6">Mission</h2>
+              <p className="text-lg md:text-2xl text-[#E4E5E7] leading-relaxed font-medium">
+                To give sustainable businesses the digital presence, visibility, and growth strategy they need to compete — and win — against brands with bigger budgets but smaller missions.
+              </p>
+            </div>
+          </motion.div>
+        </div>
       </section>
 
       {/* Brand Story Section */}
