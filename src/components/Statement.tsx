@@ -2,13 +2,13 @@ import { motion } from 'framer-motion';
 import { useRef } from 'react';
 
 const slideshowImages = [
-  'https://framerusercontent.com/images/p2APj4NLz2Qb7fEBqRZIewc.jpg',
-  'https://framerusercontent.com/images/EVQIKBGUWs742tunlhesEdf97E.jpg',
-  'https://framerusercontent.com/images/dRIV80CQSNOlbCC3occkaLgdXoo.jpg',
-  'https://framerusercontent.com/images/p2APj4NLz2Qb7fEBqRZIewc.jpg',
-  'https://framerusercontent.com/images/EVQIKBGUWs742tunlhesEdf97E.jpg',
-  'https://framerusercontent.com/images/dRIV80CQSNOlbCC3occkaLgdXoo.jpg',
-  'https://framerusercontent.com/images/p2APj4NLz2Qb7fEBqRZIewc.jpg',
+  '../assets/neuerde1.jpeg',
+  '../assets/neuerde2.jpeg',
+  '../assets/neuerde3.jpeg',
+  '../assets/neuerde4.jpeg',
+  '../assets/neuerde1.jpeg',
+  '../assets/neuerde2.jpeg',
+  '../assets/neuerde3.jpeg',
 ];
 
 const Statement = () => {
@@ -30,7 +30,7 @@ We transform bold ideas into captivating digital experiences that drive real gro
       </div>
 
       {/* Smooth Continuous Slideshow */}
-      <div className="relative w-full h-[500px] md:h-[600px] select-none overflow-hidden flex items-center bg-[#03A696]">
+      <div className="relative w-full h-[500px] md:h-[600px] select-none overflow-hidden flex items-center bg-[var(--color-neuerde-dark)]">
         <motion.div 
           className="flex gap-8 items-center min-w-max"
           animate={{ x: ["0%", "-50%"] }}
