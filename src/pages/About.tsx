@@ -1,6 +1,6 @@
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import Footer from '../components/Footer';
 import Team from '../components/Team';
 
@@ -8,18 +8,6 @@ const About = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const scrollRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: scrollRef,
-    offset: ['start start', 'end end']
-  });
-
-  const visionOpacity = useTransform(scrollYProgress, [0, 0.45], [1, 0]);
-  const visionScale = useTransform(scrollYProgress, [0, 0.45], [1, 0.9]);
-  
-  const missionOpacity = useTransform(scrollYProgress, [0.55, 1], [0, 1]);
-  const missionScale = useTransform(scrollYProgress, [0.55, 1], [0.9, 1]);
 
   const howWeWork = [
     { letter: 'N', title: 'New Discovery Call', desc: 'Unearthing Your Unique Story' },
