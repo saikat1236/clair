@@ -43,7 +43,6 @@ const Footer = () => (
             <Link to="/contact" className="text-[#AEB0B6] hover:text-white transition-colors">Contact</Link>
             <Link to="/legal/privacy" className="text-[#AEB0B6] hover:text-white transition-colors">Privacy Policy</Link>
             <Link to="/legal/terms" className="text-[#AEB0B6] hover:text-white transition-colors">Term of Service</Link>
-            <Link to="/404" className="text-[#AEB0B6] hover:text-white transition-colors">404</Link>
           </div>
           <div className="flex flex-col gap-5 text-[18px] font-medium">
             <a href="https://x.com/" target="_blank" rel="noreferrer" className="text-[#AEB0B6] hover:text-white transition-colors flex items-center justify-between group">
@@ -68,8 +67,8 @@ const Footer = () => (
       {/* Bottom Row: Contact Info */}
       <div className="flex flex-col lg:flex-row justify-between items-end gap-12 border-t border-white/10 pt-10">
         <div className="flex flex-col gap-2 text-[14px] font-medium text-white/40">
-           <p>© {new Date().getFullYear()} Saikat. All rights reserved.</p>
-           <p>Designed by Saikat Biswas, Built with React</p>
+           <p>© {new Date().getFullYear()} Neuérde. All rights reserved.</p>
+           <p>Designed by Neuérde, Built with React</p>
         </div>
 
         <div className="flex flex-col items-end gap-2 text-right">

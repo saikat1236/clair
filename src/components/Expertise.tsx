@@ -57,11 +57,11 @@ const Expertise = () => {
   ];
 
   return (
-    <section className="py-12 px-6 bg-[var(--color-neuerde-dark)] text-white relative z-10" id="expertise">
+    <section className="py-12 px-4 sm:px-6 bg-[var(--color-neuerde-dark)] text-white relative z-10" id="expertise">
       <div className="max-w-[1200px] mx-auto">
         
         {/* Header Section */}
-        <div className="mb-40 flex flex-col items-center text-center">
+        <div className="mb-20 md:mb-40 flex flex-col items-center text-center">
           <motion.div 
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -76,7 +76,7 @@ const Expertise = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-[52px] md:text-[88px] font-semibold mb-8 tracking-[-0.05em] leading-[1] max-w-5xl"
+            className="text-4xl sm:text-5xl md:text-[88px] font-semibold mb-8 tracking-[-0.05em] leading-[1] max-w-5xl"
           >
             Sharp Thinking.<span className="text-neuerde-gradient"> Precise Execution.</span> Measurable Growth.
           </motion.h2>
@@ -84,7 +84,7 @@ const Expertise = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-[#AEB0B6] text-[18px] md:text-[22px] max-w-3xl mx-auto font-medium leading-relaxed"
+            className="text-[#AEB0B6] text-base md:text-[22px] max-w-3xl mx-auto font-medium leading-relaxed"
           >
             Five disciplines. One integrated team. Built for businesses that take their digital presence seriously.
           </motion.p>
@@ -99,7 +99,7 @@ const Expertise = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center group cursor-pointer"
+                className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center group cursor-pointer"
               >
                 <div className={`md:col-span-1 ${index % 2 !== 0 ? 'md:order-3' : ''}`}>
                   <span className="text-[20px] font-bold tracking-tighter opacity-40">{s.num}</span>
@@ -107,13 +107,13 @@ const Expertise = () => {
                 
                 <div className={`md:col-span-6 flex flex-col gap-8 ${index % 2 !== 0 ? 'md:order-2' : ''}`}>
                   <div>
-                    <h3 className="text-[32px] md:text-[40px] font-semibold mb-6 tracking-tight group-hover:text-[var(--color-neuerde-mint)] transition-colors">{s.title}</h3>
-                    <p className="text-[#94969D] text-[18px] leading-relaxed font-medium">
+                    <h3 className="text-2xl md:text-[40px] font-semibold mb-4 md:mb-6 tracking-tight group-hover:text-[var(--color-neuerde-mint)] transition-colors">{s.title}</h3>
+                    <p className="text-[#94969D] text-base md:text-[18px] leading-relaxed font-medium">
                       {s.desc}
                     </p>
                   </div>
                   
-                  <div className="flex flex-wrap gap-x-8 gap-y-4">
+                  <div className="flex flex-wrap gap-x-6 gap-y-3">
                     {s.tags.map(tag => (
                       <span key={tag} className="text-[14px] font-medium text-white/40 tracking-tight">{tag}</span>
                     ))}
@@ -137,7 +137,7 @@ const Expertise = () => {
         <div className="mt-20 text-center">
           <Link to="/services">
             <button className="bg-[var(--color-neuerde-mint)] text-[var(--color-neuerde-dark)] font-semibold px-8 py-4 rounded-full hover:bg-white transition-colors">
-              Show More Services
+              Explore Services
             </button>
           </Link>
         </div>

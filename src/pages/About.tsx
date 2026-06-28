@@ -59,47 +59,7 @@ const About = () => {
         </motion.div>
       </section>
       {/* Vision & Mission Section */}
-      <section ref={scrollRef} className="h-[200vh] max-w-[1200px] mx-auto px-6 py-16">
-        <div className="sticky top-16 md:top-24 h-[80vh]">
-          {/* Vision */}
-          <motion.div
-            style={{ opacity: visionOpacity, scale: visionScale }}
-            className="relative h-full rounded-[40px] overflow-hidden group flex items-center justify-center text-center p-6 md:p-12"
-          >
-            <img 
-              src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070&auto=format&fit=crop" 
-              className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
-              alt="Vision Background"
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[var(--color-neuerde-dark)]/70 to-[var(--color-neuerde-dark)]" />
-            <div className="relative z-10 max-w-3xl">
-              <h2 className="text-5xl md:text-7xl font-semibold mb-6">Vision</h2>
-              <p className="text-lg md:text-2xl text-[#E4E5E7] leading-relaxed font-medium">
-                To be the digital partner of choice for sustainable businesses worldwide — known for combining sharp strategy, exceptional design, and a genuine understanding of what makes purpose-driven brands succeed.
-              </p>
-            </div>
-          </motion.div>
 
-          {/* Mission */}
-          <motion.div
-            style={{ opacity: missionOpacity, scale: missionScale }}
-            className="absolute top-0 left-0 h-full w-full rounded-[40px] overflow-hidden group flex items-center justify-center text-center p-6 md:p-12"
-          >
-            <img 
-              src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2071&auto=format&fit=crop" 
-              className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
-              alt="Mission Background"
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[var(--color-neuerde-dark)]/70 to-[var(--color-neuerde-dark)]" />
-            <div className="relative z-10 max-w-3xl">
-              <h2 className="text-5xl md:text-7xl font-semibold mb-6">Mission</h2>
-              <p className="text-lg md:text-2xl text-[#E4E5E7] leading-relaxed font-medium">
-                To give sustainable businesses the digital presence, visibility, and growth strategy they need to compete — and win — against brands with bigger budgets but smaller missions.
-              </p>
-            </div>
-          </motion.div>
-        </div>
-      </section>
 
       {/* Brand Story Section */}
       <section className="max-w-[1200px] mx-auto px-6 py-32">
@@ -204,7 +164,7 @@ const About = () => {
 
       {/* How We Work Section */}
       <section className="max-w-[1200px] mx-auto px-6 py-24 md:py-40 border-t border-white/10">
-        <h2 className="text-5xl md:text-8xl font-semibold tracking-tighter text-center mb-20 md:mb-32">How We Work ?</h2>
+        <h2 className="text-4xl md:text-8xl font-semibold tracking-tighter text-center mb-20 md:mb-32">How We Work ?</h2>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6">
           {howWeWork.map((step, i) => (

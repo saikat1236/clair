@@ -17,7 +17,7 @@ const Features = () => {
       <div className="max-w-[1300px] mx-auto relative z-10">
         
         {/* Header Section */}
-        <div className="mb-40 flex flex-col items-center text-center">
+        <div className="mb-20 md:mb-40 flex flex-col items-center text-center">
           <motion.div 
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -55,16 +55,16 @@ const Features = () => {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="border border-white/5 rounded-[40px] p-12 flex flex-col overflow-hidden group relative min-h-[760px] shadow-2xl h-full"
+              className="border border-white/5 rounded-[40px] p-6 md:p-12 flex flex-col overflow-hidden group relative min-h-[500px] md:min-h-[760px] shadow-2xl h-full"
             >
-              <div className="relative z-20">
+              <div className="relative z-20 hidden md:block">
                 <h3 className="text-[28px] font-semibold mb-6 tracking-tight">We Speak Your Language</h3>
                 <p className="text-[#94969D] text-[18px] leading-relaxed font-medium max-w-[280px]">
                   We understand B Corp, ESG, lifecycle assessments, and conscious consumer behaviour. You won't spend half the project briefing us on your world — we already live in it.
                 </p>
               </div>
               
-              <div className="relative mt-auto h-[300px] -mb-16 -mx-14 z-10 pointer-events-none">
+              <div className="relative mt-auto h-[300px] md:h-[400px] -mb-16 -mx-14 z-10 pointer-events-none">
                 <img 
                   src="https://framerusercontent.com/images/vYTeT3fHsbxl2BImlESbfO53g.png?scale-down-to=1024" 
                   alt="" 
@@ -139,12 +139,12 @@ const Features = () => {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="border border-white/5 rounded-[40px] overflow-hidden flex flex-col group min-h-[760px] shadow-2xl h-full"
+              className="border border-white/5 rounded-[40px] overflow-hidden flex flex-col group min-h-[500px] md:min-h-[760px] shadow-2xl h-full"
             >
               <div className="p-3 pt-3">
                 <div className="bg-[#070708] rounded-[28px] overflow-hidden border border-white/5 aspect-[1.1] relative shadow-inner">
                   <img 
-                    src="https://framerusercontent.com/images/TFpiVA7CFIHWp2uE01QK7b7ig.png" 
+                    src="assets/seam.jpeg" 
                     alt="Dashboard UI" 
                     className="w-full h-full object-cover transform translate-y-6 group-hover:scale-[1.12] group-hover:translate-y-2 transition-transform duration-1000 ease-out" 
                   />
