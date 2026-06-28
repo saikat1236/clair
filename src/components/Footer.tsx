@@ -73,7 +73,7 @@ const Footer = () => (
 
         <div className="flex flex-col items-end gap-2 text-right">
            <span className="text-[14px] font-bold uppercase tracking-widest text-white/40 mb-2">Let's Connect</span>
-           <a href="tel:(510) 895-6500" className="text-[10px] md:text-[15px] font-semibold tracking-tight hover:text-[var(--color-neuerde-mint)] transition-colors opacity-90">(91) 7085959167</a>
+           <a href="tel:(510) 895-6500" className="text-[10px] md:text-[15px] font-semibold tracking-tight hover:text-[var(--color-neuerde-mint)] transition-colors opacity-90">(91) 9208571249</a>
            {/* <a href="mailto:hello@neuerde.com" className="text-[40px] md:text-[80px] font-bold tracking-tighter leading-none hover:text-[var(--color-neuerde-mint)] transition-colors mt-4">hello@neuerde.com</a> */}
         </div>
       </div>
