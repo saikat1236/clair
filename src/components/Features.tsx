@@ -151,10 +151,10 @@ const Features = () => {
                 </div>
               </div>
               
-              <div className="p-12 mt-auto">
+              <div className="p-12 mt-auto mb-auto">
                 <h3 className="text-[28px] font-semibold mb-6 tracking-tight">A Seamless Partnership</h3>
                 <p className="text-[#94969D] text-[18px] leading-relaxed font-medium">
-                  From strategy to execution, we work as an extension of your team — transparent, responsive, and committed to your long-term growth, not just the next deliverable.
+                We don’t just operate as a generic agency; we integrate entirely as an extension of your internal team. From shaping high-level strategy to executing the finest details, our collaborative approach is anchored in radical transparency and rapid responsiveness. We align ourselves completely with your ultimate vision, focusing fiercely on your long-term growth and sustainable scaling. When you partner with us, you gain a dedicated team focused on the big picture—ensuring that every move we make today, builds a stronger, more profitable foundation for your brand tomorrow.
                 </p>
               </div>
             </motion.div>
