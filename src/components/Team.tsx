@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const TeamMember = ({ name, role, desc, img, delay }: { name: string, role: string, desc: string, img: string, delay: number }) => (
   <motion.div 
@@ -8,11 +9,11 @@ const TeamMember = ({ name, role, desc, img, delay }: { name: string, role: stri
     transition={{ duration: 0.6, delay }}
     className="bg-[rgba(255,255,255,0.03)] border border-white/5 rounded-[32px] p-8 md:p-10 flex flex-col gap-8 group hover:bg-[rgba(255,255,255,0.05)] transition-colors"
   >
-    <div className="w-full aspect-square rounded-[20px] overflow-hidden">
+    <div className="w-full aspect-square rounded-full overflow-hidden">
       <img src={img} alt={name} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
     </div>
     <div className="flex flex-col gap-4">
-      <p className="text-[#AEB0B6] text-[15px] leading-relaxed font-medium">{desc}</p>
+      <p className="text-[#AEB0B6] text-[15px] leading-relaxed font-medium min-h-[66px] line-clamp-3">{desc}</p>
       <div>
         <div className="text-[18px] font-bold tracking-tight">{name}</div>
         <div className="text-[14px] text-[var(--color-neuerde-mint)] font-semibold uppercase tracking-wider mt-1">{role}</div>
@@ -21,27 +22,50 @@ const TeamMember = ({ name, role, desc, img, delay }: { name: string, role: stri
   </motion.div>
 );
 
-const Team = () => {
-  const members = [
-    {
-      name: "Ava Reynolds",
-      role: "Creative Director",
-      desc: "Ava leads Neuérde's creative vision with 10+ years in UX/UI and branding — bringing clarity, purpose, and craft to every sustainable business she works with.",
-      img: "https://framerusercontent.com/images/nYcj04ualCtRoNjNtYpgouehGg.png"
-    },
-    {
-      name: "Sophia Bennett",
-      role: "Lead UX Strategist",
-      desc: "Sophia combines research, design, and behavioural psychology to build digital experiences that feel effortless — and convert. Her work sits at the intersection of empathy and precision.",
-      img: "https://framerusercontent.com/images/zrj0Q82duwHMFQAdS26iyp6mGs.png"
-    },
+const Team = ({ limit, showSeeMore }: { limit?: number, showSeeMore?: boolean }) => {
+  const allMembers = [
+
+
     {
       name: "Daniel Carter",
       role: "Head of Development",
-      desc: "Daniel builds high-performance digital solutions, ensuring seamless, scalable, and future-ready experiences.",
-      img: "https://framerusercontent.com/images/IXdPhhGZM9j65YBrWhOVY2NaYs.png"
+      desc: "Daniel builds high-performance digital solutions, ensuring seamless, scalable, and future-ready experiences that meet the highest technical standards for modern brands.",
+      img: "/assets/team/team2.jpeg"
+    },
+        {
+      name: "Ava Reynolds",
+      role: "Creative Director",
+      desc: "Ava leads Neuérde's creative vision with 10+ years in UX/UI and branding — bringing clarity, purpose, and craft to every sustainable business she works with.",
+      img: "/assets/team/team1.jpeg"
+    },
+    {
+      name: "Liam Parker",
+      role: "Digital Strategist",
+      desc: "Liam specializes in data-driven strategies that help sustainable brands scale their impact through precision marketing and comprehensive growth analysis in the green economy.",
+      img: "/assets/team/team4.jpeg"
+    },
+    
+    {
+      name: "Marcus Thorne",
+      role: "Senior Developer",
+      desc: "Marcus focuses on clean code and performance optimization, ensuring every project is as efficient as it is beautiful and technically robust for long-term scalability.",
+      img: "/assets/team/team5.jpeg"
+    },
+        {
+      name: "Sophia Bennett",
+      role: "Lead UX Strategist",
+      desc: "Sophia combines research, design, and behavioural psychology to build digital experiences that feel effortless, human-centric, and highly effective for conscious consumers.",
+      img: "/assets/team/team3.jpeg"
+    },
+    {
+      name: "Ethan Vance",
+      role: "Content Lead",
+      desc: "Ethan crafts compelling narratives that connect brands with their audience through authentic storytelling and high-impact content strategies across all digital platforms.",
+      img: "/assets/team/team6.jpeg"
     }
   ];
+
+  const members = limit ? allMembers.slice(0, limit) : allMembers;
 
   return (
     <section className="py-12 px-6 bg-[var(--color-neuerde-dark)] text-white relative z-10" id="team">
@@ -65,17 +89,33 @@ const Team = () => {
           <div className="md:col-span-6 md:pb-4 flex md:justify-end">
              <div className="flex flex-col gap-6 md:items-end text-left md:text-right">
                 <p className="text-[16px] text-[#AEB0B6] font-medium max-w-sm">
-                    [Additional team members — headshots, names, roles, and one-line bios to be supplied by agency before launch.]
+                    Our team brings together decades of experience in building digital products that matter.
                 </p>
              </div>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           {members.map((m, i) => (
             <TeamMember key={i} {...m} delay={i * 0.1} />
           ))}
         </div>
+
+        {showSeeMore && (
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="flex justify-center"
+          >
+            <Link 
+              to="/about" 
+              className="bg-[var(--color-neuerde-mint)] text-[var(--color-neuerde-dark)] px-12 py-5 rounded-full font-bold text-[18px] hover:bg-white transition-all duration-300 shadow-lg"
+            >
+              See Full Team
+            </Link>
+          </motion.div>
+        )}
 
 
 

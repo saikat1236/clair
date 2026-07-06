@@ -19,7 +19,7 @@ const Home = () => {
       <Approach />
       <Features />
       <Expertise />
-      <Team />
+      <Team limit={3} showSeeMore={true} />
       <Testimonials />
       <FAQ />
       <ContactForm />
