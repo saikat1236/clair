@@ -2,14 +2,12 @@ import { motion } from 'framer-motion';
 
 const Features = () => {
   const avatars = [
-    'https://framerusercontent.com/images/nYcj04ualCtRoNjNtYpgouehGg.png',
-    'https://framerusercontent.com/images/zrj0Q82duwHMFQAdS26iyp6mGs.png',
-    'https://framerusercontent.com/images/IXdPhhGZM9j65YBrWhOVY2NaYs.png',
-    'https://framerusercontent.com/images/UJqoEynjW7YGRyNCYd68CrLWz4.png',
-    'https://framerusercontent.com/images/b8i4dHLAI5We20Fku6eS7Too.png',
-    'https://framerusercontent.com/images/ypqRBwN7boiS7P7VQLahlmlyUlo.png',
-    'https://framerusercontent.com/images/BJu8bfV7QaumQo8crosh5Z9wnQ.png',
-    'https://framerusercontent.com/images/nYcj04ualCtRoNjNtYpgouehGg.png',
+    '/assets/team/team1.jpeg',
+    '/assets/team/team2.jpeg',
+    '/assets/team/team3.jpeg',
+    '/assets/team/team4.jpeg',
+    '/assets/team/team5.jpeg',
+    '/assets/team/team6.jpeg',
   ];
 
   return (

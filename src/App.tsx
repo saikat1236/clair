@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Nav from './components/Nav';
+import WhatsAppButton from './components/WhatsAppButton';
 import Home from './pages/Home';
 import WorkDetail from './pages/WorkDetail';
 import About from './pages/About';
@@ -32,6 +33,7 @@ function App() {
           <Route path="/services/performance-marketing" element={<PerformanceMarketing />} />
           <Route path="/services/brand-marketing" element={<BrandMarketing />} />
         </Routes>
+        <WhatsAppButton />
       </div>
     </Router>
   );
