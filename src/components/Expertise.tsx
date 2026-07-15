@@ -78,7 +78,7 @@ const Expertise = () => {
             viewport={{ once: true }}
             className="text-4xl sm:text-5xl md:text-[88px] font-semibold mb-8 tracking-[-0.05em] leading-[1] max-w-5xl"
           >
-            Sharp Thinking.<span className="text-neuerde-gradient"> Precise Execution.</span> Measurable Growth.
+            Sharp Thinking.<span className="text-neuerde-gradient"> Precise Execution. </span> Measurable Growth.
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}

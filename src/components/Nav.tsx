@@ -32,7 +32,7 @@ const Nav = () => {
 
       <div className="flex items-center gap-4 pointer-events-auto">
         <Link to="https://calendly.com/contact-neuerde/sustainable-brand-growth-consultation" className="hidden sm:inline-block bg-neuerde-gradient text-black px-[20px] md:px-[24px] py-[10px] md:py-[14px] rounded-full font-semibold text-[14px] md:text-[16px] hover:scale-105 transition-transform duration-300">
-          Start Your Project
+          Schedule A Call
         </Link>
         
         {/* Mobile Toggle */}
@@ -68,7 +68,7 @@ const Nav = () => {
               onClick={() => setIsOpen(false)}
               className="mt-4 bg-neuerde-gradient text-black text-center py-4 rounded-2xl font-bold text-lg"
             >
-              Start Your Project
+              Schedule A Call
             </Link>
           </motion.div>
         )}
