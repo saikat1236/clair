@@ -121,11 +121,11 @@ const About = () => {
             viewport={{ once: true }}
             className="flex flex-col items-center text-center"
           >
-            <div className="w-full aspect-[4/5] rounded-[32px] overflow-hidden mb-8 border border-white/10 shadow-2xl">
+            <div className="w-full rounded-[32px] overflow-hidden mb-8 border border-white/10 shadow-2xl">
               <img 
-                src="/assets/team/rachana.jpeg" 
+                src="/assets/team/image.png" 
                 alt="Rachana Singh, Founder of Neuérde" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
             </div>
             <h3 className="text-3xl font-semibold mb-2">Rachana Singh</h3>

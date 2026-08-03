@@ -27,40 +27,40 @@ const Team = ({ limit, showSeeMore }: { limit?: number, showSeeMore?: boolean })
 
 
     {
-      name: "Daniel Carter",
+      name: "Vikram Patel",
       role: "Head of Development",
-      desc: "Daniel builds high-performance digital solutions, ensuring seamless, scalable, and future-ready experiences that meet the highest technical standards for modern brands.",
+      desc: "Vikram builds high-performance digital solutions, ensuring seamless, scalable, and future-ready experiences that meet the highest technical standards for modern brands.",
       img: "/assets/team/team2.jpeg"
     },
         {
-      name: "Ava Reynolds",
+      name: "Priya Nair",
       role: "Creative Director",
-      desc: "Ava leads Neuérde's creative vision with 10+ years in UX/UI and branding — bringing clarity, purpose, and craft to every sustainable business she works with.",
+      desc: "Priya leads Neuérde's creative vision with 10+ years in UX/UI and branding — bringing clarity, purpose, and craft to every sustainable business she works with.",
       img: "/assets/team/team1.jpeg"
     },
     {
-      name: "Liam Parker",
+      name: "Arjun Singh",
       role: "Digital Strategist",
-      desc: "Liam specializes in data-driven strategies that help sustainable brands scale their impact through precision marketing and comprehensive growth analysis in the green economy.",
+      desc: "Arjun specializes in data-driven strategies that help sustainable brands scale their impact through precision marketing and comprehensive growth analysis in the green economy.",
       img: "/assets/team/team4.jpeg"
     },
     
     {
-      name: "Marcus Thorne",
+      name: "Debashish Banerjee",
       role: "Senior Developer",
-      desc: "Marcus focuses on clean code and performance optimization, ensuring every project is as efficient as it is beautiful and technically robust for long-term scalability.",
+      desc: "Debashish focuses on clean code and performance optimization, ensuring every project is as efficient as it is beautiful and technically robust for long-term scalability.",
       img: "/assets/team/team5.jpeg"
     },
         {
-      name: "Sophia Bennett",
+      name: "Kavya Iyer",
       role: "Lead UX Strategist",
-      desc: "Sophia combines research, design, and behavioural psychology to build digital experiences that feel effortless, human-centric, and highly effective for conscious consumers.",
+      desc: "Kavya combines research, design, and behavioural psychology to build digital experiences that feel effortless, human-centric, and highly effective for conscious consumers.",
       img: "/assets/team/team3.jpeg"
     },
     {
-      name: "Ethan Vance",
+      name: "Aditya Deshmukh",
       role: "Content Lead",
-      desc: "Ethan crafts compelling narratives that connect brands with their audience through authentic storytelling and high-impact content strategies across all digital platforms.",
+      desc: "Aditya crafts compelling narratives that connect brands with their audience through authentic storytelling and high-impact content strategies across all digital platforms.",
       img: "/assets/team/team6.jpeg"
     }
   ];
